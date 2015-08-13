@@ -1,0 +1,25 @@
+.chv-search {
+  div.input-group-addon span.glyphicon {
+    color: $blue;
+  }
+}
+.chv-search-inverse {
+  * {
+    border: none;
+  }
+  input {
+    background-color: $darkblue;
+    color: $white;
+  }
+  div.input-group-addon {
+    background-color: $darkblue;
+    span.glyphicon {
+      color: $white;
+    }
+  }
+}
+.btn-white {
+  background-color: $white;
+  border: 1px solid $grey;
+  color: $blue;
+}

@@ -1,0 +1,16 @@
+@import 'SCSS/colors';
+@import 'SCSS/forms';
+@import 'SCSS/nav';
+body {
+  background-color: $blue;
+}
+.chv-threepanels {
+  background-color: $white;
+  padding: 20px;
+  hr {
+    margin: 0;
+  }
+  h2 {
+    color: $blue;
+  }
+}
