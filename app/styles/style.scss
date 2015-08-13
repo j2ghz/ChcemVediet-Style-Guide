@@ -1,6 +1,6 @@
-@import 'SCSS/colors';
-@import 'SCSS/forms';
-@import 'SCSS/nav';
+@import 'colors';
+@import 'forms';
+@import 'nav';
 body {
   background-color: $blue;
 }
@@ -13,4 +13,14 @@ body {
   h2 {
     color: $blue;
   }
+  ul {
+    list-style: none;
+    a {
+      color: $blue;
+    }
+  }
+}
+.chv-jumbotron {
+  background-color: $blue;
+  color: $white;
 }

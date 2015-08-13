@@ -10,7 +10,7 @@
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -87,7 +87,22 @@
     </div>
     <!-- /.container-fluid -->
   </nav>
-  <div>
+  <div class="col-md-6 col-md-offset-3 jumbotron text-center chv-jumbotron">
+    <h1>Čo chceš vedieť?</h1>
+    <form class="form">
+      <div class="form-group">
+        <div class="input-group chv-search">
+          <input type="text" class="form-control" placeholder="Hľadaj v už zodpovedaných žiadostiach...">
+          <div class="input-group-addon">
+            <span class="glyphicon glyphicon-search"></span>
+          </div>
+        </div>
+      </div>
+    </form>
+    <p class="lead">...alebo podaj infožiadosť cez tento portál.</p>
+    <p class="lead">Je to jednoduché:</p>
+  </div>
+  <!--div>
     <form class="form-inline">
       <div class="form-group">
         <div class="input-group chv-search">
@@ -104,21 +119,27 @@
         </div>
       </div>
     </form>
-  </div>
+  </div-->
   <div class="chv-threepanels col-xs-12">
     <div class="col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-body text-center">
+      <div class="panel panel-default text-center">
+        <div class="panel-body">
           <h2>O čom to je?</h2>
-          <p>lorem ipsum</p>
+          <p>Riadime sa heslom
+            <span class="text-primary">"Infozákon pre lenivých"</span>. Z procesu</p>
         </div>
         <hr>
         <div class="panel-body">
           <button class="btn btn-white"><b>Chcem vediet viac</b></button>
-          <ul>
+          <ul class="text-left">
             <li>
               <a href="#">
-                <span class="glyphicon"></span>
+                <span class="glyphicon glyphicon-user"></span> Právne podmienky
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-user"></span> FAQ
               </a>
             </li>
           </ul>
