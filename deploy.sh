@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e # exit with nonzero exit code if anything fails
+set -ev # exit with nonzero exit code if anything fails
 
 # clear and re-create the out directory
 rm -rf dist || exit 0;
