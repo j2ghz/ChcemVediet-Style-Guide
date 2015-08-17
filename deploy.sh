@@ -2,11 +2,11 @@
 set -ev # exit with nonzero exit code if anything fails
 
 # clear and re-create the out directory
-rm -rf dist || exit 0;
-mkdir dist;
+#rm -rf dist || exit 0;
+#mkdir dist;
 
 # run our compile script, discussed above
-gulp
+#gulp
 
 # go to the out directory and create a *new* Git repo
 cd dist
@@ -18,7 +18,7 @@ git config user.email "j2.00ghz@gmail.com"
 
 # The first and only commit to this new Git repo contains all the
 # files present with the commit message "Deploy to GitHub Pages".
-git add .
+git add -A
 git commit -m "Deploy to GitHub Pages"
 
 # Force push from the current repo's master branch to the remote

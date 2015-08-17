@@ -9,5 +9,4 @@ env:
 before_install: npm install bower -g
 after_install: bower update
 script: gulp
-after_success:
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && ./deploy.sh
+after_success: test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && ./deploy.sh
