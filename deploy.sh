@@ -20,6 +20,7 @@ git config user.email "j2.00ghz@gmail.com"
 # files present with the commit message "Deploy to GitHub Pages".
 git add -A
 cd styles
+ls
 git add -A
 cd ..
 git commit -m "Deploy to GitHub Pages"
