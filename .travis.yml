@@ -6,6 +6,8 @@ env:
   global:
   - GH_REF: github.com/j2ghz/ChcemVediet-Style-Guide.git
   - secure: ZnKU3WniVI1/Ep+x3FEMFjXZafJ/wyCJkiUMzT8h8/EdfaI+WJANjMeYJuKkUnpaXynIW/5p7TnfbPgPgNgRkF88TfHknp2P6Q2y3DWx0awn+YqkLgGAzucaui9p2h8ojEnDzxP77vHhSwTuUxdxkufuA2eLpmhZ6lF/A4jfPrOfopC247YSLLDjFuI2CZwD6JmJiOSFzeor94eZPRnr/tqcKwyZGP7f8HE1ZmhtlSIjjRSBjLUgqpOjWB3eVUUvXznTDPBREFA77jSTLWuX3VAXX5tWFzjVLfryJ2ksErTa51lhvZZU0bEPMumMabuEtx4PqLjBhCoKjjzMzXk0nF1+s1U0sjWYh1zJpq1WF13zp77IjoUcPAX2+EWCbaLFL/G/PaqFnbuZd4JvLM049iAEuT4hTpCVAv9fpY/jL9dasAH9TCgk1bsCmHOFhzXI/isXAQsTj9LZv80uAwKbTrXSK4oY/3gskUd6O1Y8LHGKdgzuPVfr9BGzE9D/RvTcP3ndKtohtQg6z9R95t4EeYN7bfApMPd9p4biPwvm49C79WxkcXeWEv0yrT6Vt9tL7LaF+Gk0XC7v7KVsFTUau4+zQYJn/ZSkhUtDbyE84xDAdwJtIdpvuTUICTOa9nWvDVMIxUPreO0Q5tlhG2o+jOeA4RHMpqaC5ogerUiSdLg=
+before_install: npm install bower -g
+after_install: bower update
 script: gulp
 after_success:
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && ./deploy.sh
