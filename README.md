@@ -1,5 +1,4 @@
-# ChcemVediet
-TODO: Build status
+# ChcemVediet [![Build Status](https://travis-ci.org/j2ghz/ChcemVediet-Style-Guide.svg?branch=master)](https://travis-ci.org/j2ghz/ChcemVediet-Style-Guide)
 
 TODO: description
 ## Commands
