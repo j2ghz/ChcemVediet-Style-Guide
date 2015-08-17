@@ -1,0 +1,21 @@
+{
+  "name": "ChcemVediet style guide",
+  "version": "0.0.0",
+  "homepage": "https://github.com/j2ghz/ChcemVediet",
+  "authors": [
+    "J2ghz <j2.00ghz@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
+}
