@@ -15,13 +15,13 @@ git init
 # inside this git repo we'll pretend to be a new user
 git config user.name "Travis CI"
 git config user.email "j2.00ghz@gmail.com"
-#DEBUG FIXME
-ls
-tree
 
 # The first and only commit to this new Git repo contains all the
 # files present with the commit message "Deploy to GitHub Pages".
 git add -A
+cd styles
+git add -A
+cd ..
 git commit -m "Deploy to GitHub Pages"
 
 # Force push from the current repo's master branch to the remote
