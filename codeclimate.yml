@@ -27,9 +27,9 @@ engines:
 # For more details see here:
 # http://docs.codeclimate.com/article/289-configuring-your-repository-via-codeclimate-yml#platform
 
- ratings:
-   paths:
-   - app/**
+ratings:
+  paths:
+    - app/**
 #   - lib/**
 #   - "**.rb"
 #   - "**.go"
