@@ -3,6 +3,7 @@ node_modules
 dist
 .tmp
 docs
+app.yaml
 
 # Created by https://www.gitignore.io/api/windows,node
 
