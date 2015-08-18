@@ -68,6 +68,16 @@ gulp.task('copy', () =>
     .pipe($.size({title: 'copy'}))
 );
 
+// Copy bootstrap
+gulp.task('bootstrap', () =>
+  gulp.src([
+    'node_modules/bootstrap-sass/assets/stylesheets/**/*'
+  ], {
+    dot: true
+  }).pipe(gulp.dest('app/styles/bootstrap'))
+    .pipe($.size({title: 'bootstrap copy'}))
+);
+
 // Copy web fonts to dist
 gulp.task('fonts', () =>
   gulp.src(['app/fonts/**'])
@@ -76,7 +86,7 @@ gulp.task('fonts', () =>
 );
 
 // Compile and automatically prefix stylesheets
-gulp.task('styles', () => {
+gulp.task('styles', ['bootstrap'] , () => {
   const AUTOPREFIXER_BROWSERS = [
     'ie >= 10',
     'ie_mob >= 10',
