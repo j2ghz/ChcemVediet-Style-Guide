@@ -69,13 +69,23 @@ gulp.task('copy', () =>
 );
 
 // Copy bootstrap
-gulp.task('bootstrap', () =>
+gulp.task('bootstrap', ['bootstrapFont'] , () =>
   gulp.src([
     'node_modules/bootstrap-sass/assets/stylesheets/**/*'
   ], {
     dot: true
   }).pipe(gulp.dest('app/styles/bootstrap'))
     .pipe($.size({title: 'bootstrap copy'}))
+);
+
+// Copy bootstrap fonts
+gulp.task('bootstrapFont', () =>
+  gulp.src([
+    'node_modules/bootstrap-sass/assets/fonts/**/*'
+  ], {
+    dot: true
+  }).pipe(gulp.dest('app/fonts'))
+    .pipe($.size({title: 'bootstrap copy fonts'}))
 );
 
 // Copy web fonts to dist
@@ -86,7 +96,7 @@ gulp.task('fonts', () =>
 );
 
 // Compile and automatically prefix stylesheets
-gulp.task('styles', ['bootstrap'] , () => {
+gulp.task('styles', () => {
   const AUTOPREFIXER_BROWSERS = [
     'ie >= 10',
     'ie_mob >= 10',
@@ -172,7 +182,7 @@ gulp.task('html', () => {
 gulp.task('clean', cb => del(['.tmp', 'dist/*', '!dist/.git'], {dot: true}, cb));
 
 // Watch files for changes & reload
-gulp.task('serve', ['styles'], () => {
+gulp.task('serve', ['bootstrap','styles'], () => {
   browserSync({
     notify: false,
     // Customize the BrowserSync console logging prefix
@@ -207,6 +217,7 @@ gulp.task('serve:dist', ['default'], () =>
 // Build production files, the default task
 gulp.task('default', ['clean'], cb =>
   runSequence(
+    'bootstrap',
     'styles',
     ['jshint', 'html', 'scripts', 'images', 'fonts', 'copy'],
     'generate-service-worker',

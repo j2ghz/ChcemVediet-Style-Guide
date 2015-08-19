@@ -1,4 +1,5 @@
 app/styles/bootstrap
+app/fonts/bootstrap
 bower_components
 node_modules
 dist
