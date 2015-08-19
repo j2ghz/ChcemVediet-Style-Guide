@@ -9,6 +9,7 @@ env:
 install: npm install
 script: gulp
 after_success: test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && ./deploy.sh
+after_script: gulp pagespeed
 cache:
   directories:
     - node_modules
