@@ -18,8 +18,11 @@
   //color: $glyphicon-default-color; FIXME also changes glyphicons in buttons
 }
 .btn {
-  outline: none!important; //FIXME is there a better way?
   font-weight: 500;
+  &:focus,
+  &:active:focus {
+    outline: none;
+  }
 }
 .btn-primary {
   &:hover {
