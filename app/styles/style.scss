@@ -1,5 +1,49 @@
 @import 'variables';
 @import 'bootstrap';
+
+//Move to _buttons.scss
+@mixin btn-color($text, $bg) {
+  color: $text;
+  background-color: $bg;
+  border: 1px solid $bg;
+  span.glyphicon {
+    color: $text;
+  }
+}
+.glyphicon-lg {
+  font-size: 32px;
+}
+.glyphicon {
+  
+  //color: $glyphicon-default-color; FIXME also changes glyphicons in buttons
+}
 .btn {
   font-weight: 500;
+}
+.btn-primary {
+  &:hover {
+    @include btn-color($btn-primary-bg,$btn-primary-color)
+  }
+  &:hover:active,
+  &:active {
+    @include btn-color($btn-primary-bg,$btn-primary-click)
+  }
+}
+.btn-success {
+  &:hover {
+    @include btn-color($btn-success-bg,$btn-success-color)
+  }
+  &:hover:active,
+  &:active {
+    @include btn-color($btn-success-bg,$btn-success-click)
+  }
+}
+.btn-warning {
+  &:hover {
+    @include btn-color($btn-warning-bg,$btn-warning-color)
+  }
+  &:hover:active,
+  &:active {
+    @include btn-color($btn-warning-bg,$btn-warning-click)
+  }
 }
