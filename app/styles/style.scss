@@ -13,9 +13,9 @@
 .glyphicon-lg {
   font-size: 32px;
 }
-.glyphicon {
-  
-  //color: $glyphicon-default-color; FIXME also changes glyphicons in buttons
+:not(button) > .glyphicon {
+  // Glyphicons are grey when not in buttons
+  color: $glyphicon-default-color;
 }
 .btn {
   font-weight: 500;
