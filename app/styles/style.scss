@@ -1,45 +1,13 @@
 @import 'variables';
 @import 'bootstrap';
+@import 'buttons';
 
-//Move to _buttons.scss
-@mixin chv-btn-color($bg, $text) {
-  color: $text;
-  background-color: $bg;
-  border: 1px solid $bg;
-  span.glyphicon {
-    color: $text;
-  }
-}
-@mixin chv-btn-variant ($bg, $color, $click) {
-  &:hover {
-    @include chv-btn-color($color,$bg)
-  }
-  &:hover:active,
-  &:active {
-    @include chv-btn-color($click,$bg)
-  }
-}
+//General
 .glyphicon-lg {
   font-size: 32px;
 }
 :not(button) > .glyphicon {
-  
-  // Glyphicons are grey when not in buttons
-  color: $glyphicon-default-color;
+  color: $glyphicon-default-color; // Glyphicons are grey when not in buttons
 }
-.btn {
-  font-weight: 500;
-  &:focus,
-  &:active:focus {
-    outline: none;
-  }
-}
-.btn-primary {
-  @include chv-btn-variant($btn-primary-bg,$btn-primary-color, $btn-primary-click)
-}
-.btn-success {
-  @include chv-btn-variant($btn-success-bg,$btn-success-color, $btn-success-click)
-}
-.btn-warning {
-  @include chv-btn-variant($btn-warning-bg,$btn-warning-color, $btn-warning-click)
-}
+
+//WIP:
