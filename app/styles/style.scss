@@ -2,7 +2,7 @@
 @import 'bootstrap';
 
 //Move to _buttons.scss
-@mixin btn-color($text, $bg) {
+@mixin chv-btn-color($bg, $text) {
   color: $text;
   background-color: $bg;
   border: 1px solid $bg;
@@ -10,10 +10,20 @@
     color: $text;
   }
 }
+@mixin chv-btn-variant ($bg, $color, $click) {
+  &:hover {
+    @include chv-btn-color($color,$bg)
+  }
+  &:hover:active,
+  &:active {
+    @include chv-btn-color($click,$bg)
+  }
+}
 .glyphicon-lg {
   font-size: 32px;
 }
 :not(button) > .glyphicon {
+  
   // Glyphicons are grey when not in buttons
   color: $glyphicon-default-color;
 }
@@ -25,29 +35,11 @@
   }
 }
 .btn-primary {
-  &:hover {
-    @include btn-color($btn-primary-bg,$btn-primary-color)
-  }
-  &:hover:active,
-  &:active {
-    @include btn-color($btn-primary-bg,$btn-primary-click)
-  }
+  @include chv-btn-variant($btn-primary-bg,$btn-primary-color, $btn-primary-click)
 }
 .btn-success {
-  &:hover {
-    @include btn-color($btn-success-bg,$btn-success-color)
-  }
-  &:hover:active,
-  &:active {
-    @include btn-color($btn-success-bg,$btn-success-click)
-  }
+  @include chv-btn-variant($btn-success-bg,$btn-success-color, $btn-success-click)
 }
 .btn-warning {
-  &:hover {
-    @include btn-color($btn-warning-bg,$btn-warning-color)
-  }
-  &:hover:active,
-  &:active {
-    @include btn-color($btn-warning-bg,$btn-warning-click)
-  }
+  @include chv-btn-variant($btn-warning-bg,$btn-warning-color, $btn-warning-click)
 }
