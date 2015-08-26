@@ -1,67 +1,12 @@
 @import 'variables';
 @import 'bootstrap';
 @import 'buttons';
+@import 'tags';
 
 //General
 .glyphicon-lg {
   font-size: 32px;
 }
-
- :not(button) > .glyphicon {
+:not(button) > .glyphicon {
   color: $glyphicon-default-color; // Glyphicons are grey when not in buttons
-}
-
-//WIP:
-//tags
-
-@mixin chv-tag-icon($icon, $bg, $hover) {
-  &:after {
-    content: $icon;
-    color: $hover;
-    background-color: $bg;
-  };
-
-  &:hover:after {
-    color: $white;
-    background-color: $hover;
-  };
-  color: $white;
-  background-color: $bg;
-}
-
-.chv-tag {
-  input[type='checkbox'] {
-    opacity: 0;
-    width: 0;
-  }
-
-  label {
-    border-radius: 3px;
-    padding-left: 6px;
-
-    &:after {
-      border-radius: 0 3px 3px 0;
-      padding: 3px;
-      margin-left: 3px;
-      position: relative;
-      vertical-align: middle; //FIXME text doesn't look good
-      display: inline-block;
-      font-family: 'Glyphicons Halflings';
-      font-style: normal;
-      font-weight: normal;
-
-      //line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-  }
-
-  input[type='checkbox']+label {
-    cursor: pointer;
-    @include chv-tag-icon("\e013",$gray-light,$gray-dark);
-  }
-
-  input[type='checkbox']:checked+label {
-    @include chv-tag-icon("\e014",$brand-primary-light,$brand-primary);
-  }
 }

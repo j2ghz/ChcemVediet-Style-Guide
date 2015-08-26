@@ -1,0 +1,45 @@
+@mixin chv-tag-icon($icon, $bg, $hover) {
+  color: $white;
+  background-color: $bg;
+  &:after {
+    content: $icon;
+    color: $hover;
+    background-color: $bg;
+  };
+  &:hover:after {
+    color: $white;
+    background-color: $hover;
+  };
+}
+.chv-tag {
+  input[type='checkbox'] {
+    opacity: 0;
+    width: 0;
+    margin: 0;
+  }
+  label {
+    border-radius: 3px;
+    padding-left: 6px;
+    margin: 0;
+    &:after {
+      border-radius: 0 3px 3px 0;
+      vertical-align: middle;
+      padding: 3px;
+      margin-left: 3px;
+      position: relative;
+      display: inline-block;
+      font-family: 'Glyphicons Halflings';
+      font-style: normal;
+      font-weight: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+  input[type='checkbox']+label {
+    cursor: pointer;
+    @include chv-tag-icon("\e013",$gray-lighter,$gray-dark);
+  }
+  input[type='checkbox']:checked+label {
+    @include chv-tag-icon("\e014",$brand-primary-light,$brand-primary);
+  }
+}
