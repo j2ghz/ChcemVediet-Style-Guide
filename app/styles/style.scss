@@ -1,7 +1,11 @@
+// scss-lint:disable EmptyLineBetweenBlocks FinalNewline
 @import 'variables';
 @import 'bootstrap';
 @import 'buttons';
 @import 'tags';
+*:focus {
+  outline: none !important;
+}
 
 //General
 .glyphicon-lg {
@@ -10,3 +14,37 @@
 :not(button) > .glyphicon {
   color: $glyphicon-default-color; // Glyphicons are grey when not in buttons
 }
+.small,
+small {
+  color: $gray-light;
+  font-weight: normal;
+}
+.chv-3 {
+  background: $gray-lighter;
+  .alert {
+    border-style: dotted;
+    .glyphicon {
+      color: inherit;
+    }
+  }
+  .input-group {
+    margin: 7px;
+    input,
+    .input-group-addon {
+      border-color: $grey;
+    }
+  }
+}
+.chv-links {
+  display: inline-block;
+  margin-top: 25px;
+  ul {
+    clear: left;
+    float: left;
+    li {
+      clear: left;
+      float: left;
+    }
+  }
+}
+@include text-emphasis-variant('.text-primary', $blue);
