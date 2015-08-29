@@ -4,7 +4,7 @@
 @import 'buttons';
 @import 'tags';
 *:focus {
-  outline: none !important;
+  outline: none !important; // remove annoying blue outline from bootstrap that stays on clicked elements
 }
 
 //General
@@ -21,6 +21,16 @@ small {
 }
 .chv-3 {
   background: $gray-lighter;
+  .chv-panel-reasons {
+    background-color: inherit;
+  }
+}
+.chv-other-logins {
+  margin-bottom: 20px;
+  img {
+    height: 30px;
+    width: 30px;
+  }
 }
 .chv-login {
   .alert {
@@ -39,9 +49,12 @@ small {
   form {
     margin: 10px;
   }
+  hr {
+    margin: 0;
+  }
 }
 .chv-links {
-  color: $blue;
+  color: $darkblue;
   display: inline-block;
   margin-top: 25px;
   ul {
