@@ -1,3 +1,4 @@
+// scss-lint:disable EmptyLineBetweenBlocks FinalNewline
 @mixin chv-btn-color($bg, $text) {
   color: $text;
   background-color: $bg;
@@ -7,12 +8,14 @@
   }
 }
 @mixin chv-btn-variant ($bg, $color, $click) {
+  color: $color;
+  background: $bg;
   &:hover {
-    @include chv-btn-color($color,$bg)
+    @include chv-btn-color($color, $bg)
   }
   &:hover:active,
   &:active {
-    @include chv-btn-color($click,$bg)
+    @include chv-btn-color($click, $bg)
   }
 }
 .btn {
@@ -23,11 +26,21 @@
   }
 }
 .btn-primary {
-  @include chv-btn-variant($btn-primary-bg,$btn-primary-color, $btn-primary-click)
+  @include chv-btn-variant($btn-primary-bg, $btn-primary-color, $btn-primary-click)
 }
 .btn-success {
-  @include chv-btn-variant($btn-success-bg,$btn-success-color, $btn-success-click)
+  @include chv-btn-variant($btn-success-bg, $btn-success-color, $btn-success-click)
 }
 .btn-warning {
-  @include chv-btn-variant($btn-warning-bg,$btn-warning-color, $btn-warning-click)
+  @include chv-btn-variant($btn-warning-bg, $btn-warning-color, $btn-warning-click)
+}
+.chv-login .btn-success {
+  @include chv-btn-color($btn-success-color, $btn-success-bg);
+  &:hover {
+    @include chv-btn-color($btn-success-click, $btn-success-bg)
+  }
+  &:hover:active,
+  &:active {
+    @include chv-btn-color($btn-success-click, $btn-success-bg)
+  }
 }

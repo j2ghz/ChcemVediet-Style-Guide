@@ -21,6 +21,8 @@ small {
 }
 .chv-3 {
   background: $gray-lighter;
+}
+.chv-login {
   .alert {
     border-style: dotted;
     .glyphicon {
@@ -34,8 +36,12 @@ small {
       border-color: $grey;
     }
   }
+  form {
+    margin: 10px;
+  }
 }
 .chv-links {
+  color: $blue;
   display: inline-block;
   margin-top: 25px;
   ul {
@@ -45,6 +51,13 @@ small {
       clear: left;
       float: left;
     }
+  }
+  .glyphicon {
+    color: inherit;
+    margin-right: 10px;
+  }
+  a {
+    color: inherit;
   }
 }
 @include text-emphasis-variant('.text-primary', $blue);
