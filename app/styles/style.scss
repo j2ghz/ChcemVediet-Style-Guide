@@ -17,8 +17,12 @@
 .small,
 small {
   color: $gray-light;
-  font-weight: normal;
 }
+body {
+  font-weight: $regular;
+}
+
+//Three panels
 .chv-3 {
   background: $gray-lighter;
   .chv-panel-reasons {
@@ -78,8 +82,11 @@ small {
   margin-bottom: 0;
   .navbar-brand {
     color: $white;
+    font-weight: $regular;
     .badge {
       background-color: $lightblue;
+      font-size: 12px;
+      font-weight: $regular;
     }
   }
   .navbar-right li a {
@@ -91,15 +98,19 @@ small {
   .navbar-left li a {
     color: $blue;
   }
+  li a.chv-nav-highlight {
+    background-color: #6fdc91;
+    color: $white;
+  }
 }
 .chv-search {
-  div.input-group-addon span.glyphicon {
+  .input-group-addon .glyphicon {
     color: $blue;
   }
 }
 .chv-search-inverse {
   * {
-    border: none;
+    border: 0;
   }
   input {
     background-color: $darkblue;
@@ -108,9 +119,9 @@ small {
       color: $white;
     }
   }
-  div.input-group-addon {
+  .input-group-addon {
     background-color: $darkblue;
-    span.glyphicon {
+    .glyphicon {
       color: $white;
     }
   }
