@@ -73,4 +73,23 @@ small {
     color: inherit;
   }
 }
+.chv-nav {
+  background-color: $blue;
+  margin-bottom: 0;
+  .navbar-brand {
+    color: $white;
+    .badge {
+      background-color: $lightblue;
+    }
+  }
+  .navbar-right li a {
+    color: $white;
+  }
+}
+.chv-nav2 {
+  background-color: $white;
+  .navbar-left li a {
+    color: $blue;
+  }
+}
 @include text-emphasis-variant('.text-primary', $blue);
