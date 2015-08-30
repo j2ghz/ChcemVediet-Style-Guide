@@ -80,6 +80,7 @@ body {
 .chv-nav {
   background-color: $blue;
   margin-bottom: 0;
+  border-bottom-width: 0;
   .navbar-brand {
     color: $white;
     font-weight: $regular;
@@ -101,6 +102,9 @@ body {
   li a.chv-nav-highlight {
     background-color: #6fdc91;
     color: $white;
+  }
+  .navbar-right {
+    margin-right: 0;
   }
 }
 .chv-search {
