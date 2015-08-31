@@ -150,7 +150,7 @@ gulp.task('scripts', () =>
     .pipe($.concat('main.min.js'))
     .pipe($.uglify({preserveComments: 'some'}))
     // Output files
-    .pipe(gulp.dest('dist/scripts'))
+    .pipe(gulp.dest('dist/javascripts'))
     .pipe($.size({title: 'scripts'}))
 );
 
