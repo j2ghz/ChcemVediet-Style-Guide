@@ -38,7 +38,7 @@ const reload = browserSync.reload;
 
 // Lint JavaScript
 gulp.task('jshint', () =>
-  gulp.src('app/scripts/**/*.js')
+  gulp.src('app/javascripts/*.js')
     .pipe(reload({stream: true, once: true}))
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish'))
@@ -69,7 +69,7 @@ gulp.task('copy', () =>
 );
 
 // Copy bootstrap
-gulp.task('bootstrap', ['bootstrapFont'] , () =>
+gulp.task('bootstrap', ['bootstrapFont','bootstrapJS'] , () =>
   gulp.src([
     'node_modules/bootstrap-sass/assets/stylesheets/**/*'
   ], {
@@ -86,6 +86,15 @@ gulp.task('bootstrapFont', () =>
     dot: true
   }).pipe(gulp.dest('app/fonts'))
     .pipe($.size({title: 'bootstrap copy fonts'}))
+);
+// Copy bootstrap fonts
+gulp.task('bootstrapJS', () =>
+  gulp.src([
+    'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js'
+  ], {
+    dot: true
+  }).pipe(gulp.dest('app/javascripts/bootstrap'))
+    .pipe($.size({title: 'bootstrap copy js'}))
 );
 
 // Copy web fonts to dist
@@ -135,7 +144,7 @@ gulp.task('scripts', () =>
     // Note: Since we are not using useref in the scripts build pipeline,
     //       you need to explicitly list your scripts here in the right order
     //       to be correctly concatenated
-    './app/scripts/main.js'
+    'app/javascripts/bootstrap/bootstrap.js'
     // Other scripts
   ])
     .pipe($.concat('main.min.js'))
@@ -196,7 +205,7 @@ gulp.task('serve', ['bootstrap','styles'], () => {
 
   gulp.watch(['app/**/*.html'], reload);
   gulp.watch(['app/styles/**/*.{scss,css}'], ['styles', reload]);
-  gulp.watch(['app/scripts/**/*.js'], ['jshint']);
+  gulp.watch(['app/javascripts/**/*.js'], ['scripts','jshint']);
   gulp.watch(['app/images/**/*'], reload);
 });
 
