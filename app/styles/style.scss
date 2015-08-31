@@ -106,7 +106,12 @@ body {
   .navbar-right {
     margin-right: 0;
   }
+  .navbar-toggle {
+    float: none;
+  };
 }
+
+//Imported search
 .chv-search {
   .input-group-addon .glyphicon {
     color: $blue;
