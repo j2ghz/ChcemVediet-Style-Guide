@@ -93,6 +93,10 @@ body {
   .navbar-right li a {
     color: $white;
   }
+  .dropdown > a:hover {
+    color: $white !important; //bootstrap override
+    font-weight: $medium;
+  };
 }
 .chv-nav2 {
   background-color: $white;
@@ -108,6 +112,13 @@ body {
   }
   .navbar-toggle {
     float: none;
+  };
+  .navbar-nav .chv-nav-highlight:hover {
+    background-color: $darkgreen;
+    color: $white;
+  };
+  .navbar-nav .chv-nav-login:hover {
+    font-weight: $medium;
   };
 }
 
