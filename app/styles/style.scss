@@ -59,7 +59,7 @@ body {
     margin: 7px; //FIXME
     input,
     .input-group-addon {
-      border-color: $grey;
+      border-color: $black5;
     }
   }
 
@@ -68,7 +68,7 @@ body {
   }
 }
 .chv-links {
-  color: $darkblue;
+  color: $blue2;
   display: inline-block;
   margin-top: 25px;
   ul {
@@ -88,14 +88,14 @@ body {
   }
 }
 .chv-nav {
-  background-color: $blue;
+  background-color: $blue3;
   margin-bottom: 0;
   border-bottom-width: 0;
   .navbar-brand {
     color: $white;
     font-weight: $regular;
     .badge {
-      background-color: $lightblue;
+      background-color: $blue5;
       font-size: 12px;
       font-weight: $regular;
     }
@@ -111,10 +111,10 @@ body {
 .chv-nav2 {
   background-color: $white;
   .navbar-left li a {
-    color: $blue;
+    color: $blue3;
   }
   li a.chv-nav-highlight {
-    background-color: #6fdc91;
+    background-color: $green4;
     color: $white;
   }
   .navbar-right {
@@ -124,7 +124,7 @@ body {
     float: none;
   };
   .navbar-nav .chv-nav-highlight:hover {
-    background-color: $darkgreen;
+    background-color: $green3;
     color: $white;
   };
   .navbar-nav .chv-nav-login:hover {
@@ -135,7 +135,7 @@ body {
 //Imported search
 .chv-search {
   .input-group-addon .glyphicon {
-    color: $blue;
+    color: $blue3;
   }
 }
 .chv-search-inverse {
@@ -143,17 +143,17 @@ body {
     border: 0;
   }
   input {
-    background-color: $darkblue;
+    background-color: $blue2;
     color: $white;
     &::placeholder {
       color: $white;
     }
   }
   .input-group-addon {
-    background-color: $darkblue;
+    background-color: $blue2;
     .glyphicon {
       color: $white;
     }
   }
 }
-@include text-emphasis-variant('.text-primary', $blue);
+@include text-emphasis-variant('.text-primary', $blue3);

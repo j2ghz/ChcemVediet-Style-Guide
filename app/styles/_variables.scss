@@ -1,14 +1,14 @@
 //old colors
-$darkblue: #00328c;
-$blue: #0032b4;
-$lightblue: #6994e8;
-$darkgreen: #39b56e;
-$green: #6fdc91;
-$lightgreen: #a3e5b5;
-$darkorange: #fc723b;
-$lightorange: #f79f84;
-$white: #fff;
-$grey: #d9d9d9;
+//$darkblue: #00328c;
+//$blue: #0032b4;
+//$lightblue: #6994e8;
+//$darkgreen: #39b56e;
+//$green: #6fdc91;
+//$lightgreen: #a3e5b5;
+//$darkorange: #fc723b;
+//$lightorange: #f79f84;
+//$white: #fff;
+//$grey: #d9d9d9;
 
 //Fonts
 $regular: 400;
@@ -17,10 +17,10 @@ $bold: 700;
 
 //TODO: import new colors
 $blue1: #02216c;
-$blue2: #00328c;
-$blue3: #0032b4;
+$blue2: #00328c; //darkblue
+$blue3: #0032b4; //blue
 $blue4: #3766cb;
-$blue5: #6994e8;
+$blue5: #6994e8; //lightblue
 $blue6: #b5caf2;
 $blue7: #dae5f8;
 $blue8: #f0f4fc;
@@ -28,16 +28,17 @@ $black1: #000;
 $black2: #333;
 $black3: #666;
 $black4: #b3b3b3;
-$black5: #dbdbdb;
+$black5: #dbdbdb; //grey
 $black7: #e8e8e8;
 $black8: #f8f8f8;
-$green3: #39b56e;
-$green4: #6fdc91;
-$green5: #a3e5b5;
+$white: #fff;
+$green3: #39b56e; //darkgreen
+$green4: #6fdc91; //green
+$green5: #a3e5b5; //lightgreen
 $green7: #e8f8ed;
 $green8: #f6fcf8;
-$orange3: #fc723b;
-$orange4: #f79f84;
+$orange3: #fc723b; //darkorange
+$orange4: #f79f84; //lightorange
 $orange5: #facfc3;
 $orange7: #fce7e1;
 $orange8:#fef5f3

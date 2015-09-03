@@ -5,19 +5,19 @@
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
-$gray-base: #000;
-$gray-darker: lighten($gray-base, 13.5%); // #222
-$gray-dark: lighten($gray-base, 20%); // #333
-$gray: lighten($gray-base, 33.5%); // #555
-$gray-light: lighten($gray-base, 46.7%); // #777
-$gray-lighter: lighten($gray-base, 93.5%); // #eee
-$brand-primary: $darkblue;
-$brand-primary-light: $lightblue;
-$brand-success: $darkgreen;
-$brand-success-light: $lightgreen;
+$gray-base: $black1;
+$gray-darker: $black2;
+$gray-dark: $black3;
+$gray: $black4;
+$gray-light: $black5;
+$gray-lighter: $black7;
+$brand-primary: $blue2;
+$brand-primary-light: $blue5;
+$brand-success: $green3;
+$brand-success-light: $green5;
 $brand-info: #5bc0de;
-$brand-warning: $darkorange;
-$brand-warning-light: $lightorange;
+$brand-warning: $orange3;
+$brand-warning-light: $orange4;
 $brand-danger: #d9534f;
 
 //== Scaffolding
@@ -26,20 +26,20 @@ $brand-danger: #d9534f;
 //** Background color for `<body>`.
 // $body-bg:               $blue
 //** Global text color on `<body>`.
-// $text-color:            $gray-dark
+$text-color:            $gray-base;
 //** Global textual link color.
-// $link-color:            $brand-primary
+$link-color:            $brand-primary;
 //** Link hover color set via `darken()` function.
-// $link-hover-color:      darken($link-color, 15%)
+$link-hover-color:      darken($link-color, 15%);
 //** Link hover decoration.
-// $link-hover-decoration: underline
+$link-hover-decoration: underline;
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-// $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif
-// $font-family-serif:       Georgia, "Times New Roman", Times, serif
+$font-family-sans-serif:  "Ubuntu", sans-serif;
+$font-family-serif:  "Ubuntu", sans-serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-// $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base: "Ubuntu", sans-serif;
 $font-size-base: 16px;
 
@@ -57,8 +57,9 @@ $font-size-base: 16px;
 // $line-height-computed:    floor(($font-size-base * $line-height-base)) // ~20px
 //** By default, this inherits from the `<body>`.
 // $headings-font-family:    inherit
-$headings-font-weight: 500; // $headings-line-height:    1.1
-$headings-color: $gray;
+$headings-font-weight: 500;
+// $headings-line-height:    1.1
+$headings-color: $black3;
 
 //== Iconography
 //
@@ -71,7 +72,7 @@ $headings-color: $gray;
 // $icon-font-name:          "glyphicons-halflings-regular"
 //** Element ID within SVG icon file.
 // $icon-font-svg-id:        "glyphicons_halflingsregular"
-$glyphicon-default-color: #b0b0b0;
+$glyphicon-default-color: $black4;
 
 //== Components
 //
@@ -119,24 +120,24 @@ $glyphicon-default-color: #b0b0b0;
 // $btn-font-weight:                normal
 // $btn-default-color:              #333
 // $btn-default-bg:                 #fff
-$btn-default-border: #ccc;
+$btn-default-border: $black4;
 $btn-primary-color: $brand-primary;
 $btn-primary-click: $brand-primary-light;
-$btn-primary-bg: #fff;
+$btn-primary-bg: $white;
 $btn-primary-border: $btn-default-border;
 $btn-success-color: $brand-success;
 $btn-success-click: $brand-success-light;
-$btn-success-bg: #fff;
+$btn-success-bg: $white;
 $btn-success-border: $btn-default-border;
 $btn-info-color: $brand-info;
-$btn-info-bg: #fff;
+$btn-info-bg: $white;
 $btn-info-border: $btn-default-border;
 $btn-warning-color: $brand-warning;
 $btn-warning-click: $brand-warning-light;
-$btn-warning-bg: #fff;
+$btn-warning-bg: $white;
 $btn-warning-border: $btn-default-border;
 $btn-danger-color: $brand-danger;
-$btn-danger-bg: #fff;
+$btn-danger-bg: $white;
 $btn-danger-border: $btn-default-border;
 
 // $btn-link-disabled-color:        $gray-light
@@ -260,10 +261,10 @@ $btn-danger-border: $btn-default-border;
 //** Number of columns in the grid.
 // $grid-columns:              12
 //** Padding between columns. Gets divided in half for the left and right.
-// $grid-gutter-width:         30px
+// $grid-gutter-width:         30px //TODO
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
-// $grid-float-breakpoint:     $screen-sm-min
+// $grid-float-breakpoint:     $screen-sm-min //TODO
 //** Point at which the navbar begins collapsing.
 // $grid-float-breakpoint-max: ($grid-float-breakpoint - 1)
 //== Container sizes
@@ -394,9 +395,9 @@ $btn-danger-border: $btn-default-border;
 // $state-info-text:                #31708f
 // $state-info-bg:                  #d9edf7
 // $state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%)
-$state-warning-text: $darkorange;
+$state-warning-text: $brand-warning;
 $state-warning-bg: $white;
-$state-warning-border: $darkorange;
+$state-warning-border: $brand-warning;
 
 // $state-danger-text:              #a94442
 // $state-danger-bg:                #f2dede
