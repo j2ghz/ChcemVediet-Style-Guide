@@ -11,7 +11,7 @@
 .glyphicon-lg {
   font-size: 32px;
 }
-:not(button) > .glyphicon {
+ :not(button) > .glyphicon {
   color: $glyphicon-default-color; // Glyphicons are grey when not in buttons
 }
 .small,
@@ -42,17 +42,27 @@ body {
     .glyphicon {
       color: inherit;
     }
+
+    .form {
+      margin-left: -10px;
+      margin-right: -10px;
+
+      .input-group {
+        //FIXME
+        margin-left: 0;
+        margin-right: 0;
+      };
+    };
   }
+
   .input-group {
-    margin: 7px;
+    margin: 7px; //FIXME
     input,
     .input-group-addon {
       border-color: $grey;
     }
   }
-  form {
-    margin: 10px;
-  }
+
   hr {
     margin: 0;
   }
