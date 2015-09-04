@@ -40,6 +40,9 @@ body {
 //Three panels
 .chv-3 {
   margin-top: 50px;
+  hr {
+    margin-top: 0;
+  }
 }
 .chv-other-logins {
   margin-bottom: 20px;
@@ -61,9 +64,6 @@ body {
     .input-group-addon {
       border-color: $black5;
     }
-  }
-  hr {
-    margin: 0;
   }
 }
 .chv-links {
@@ -160,5 +160,22 @@ body {
 }
 .chv-main-panel {
   background: $blue3;
+  .jumbotron {
+    background-color: $blue3;
+    color: $white;
+    h1 {
+      font-size: 36px;
+      font-weight: $regular;
+      span {
+        font-weight: $medium;
+      }
+    }
+  }
+}
+.chv-panel-reasons {
+  li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }
 @include text-emphasis-variant('.text-primary', $blue3);
