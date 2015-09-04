@@ -41,7 +41,7 @@
     },
     {
       "label": "StyleGuide homepage",
-      "url": "http://localhost:3000/homepage",
+      "url": "http://localhost:3000/homepage.html",
       "hideSelectors": [],
       "removeSelectors": [],
       "selectors": [
