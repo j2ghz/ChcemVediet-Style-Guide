@@ -20,6 +20,10 @@ $brand-warning: $orange3;
 $brand-warning-light: $orange4;
 $brand-danger: #d9534f;
 
+//== Breadcrumb overrides
+$breadcrumb-color: $brand-primary-light;
+$breadcrumb-active-color: $brand-primary;
+
 //== Scaffolding
 //
 //## Settings for some of the most global styles.

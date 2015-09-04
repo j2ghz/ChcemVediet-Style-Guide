@@ -21,6 +21,21 @@ small {
 body {
   font-weight: $regular;
 }
+//breadcrumbs
+
+.breadcrumb {
+  > li {
+    +li:before {
+      content: $breadcrumb-separator;
+    }
+    > a {
+      color: $breadcrumb-color;
+    }
+  }
+  .active {
+      color: $breadcrumb-active-color;
+  }
+}
 
 //Three panels
 .chv-3 {
@@ -38,7 +53,7 @@ body {
 }
 .chv-login {
   .alert {
-    border-style: dotted;
+    border-style: dotted; //FIXME vypada ze vse je v alertu
     .glyphicon {
       color: inherit;
     }
@@ -102,6 +117,7 @@ body {
   }
   .navbar-right li a {
     color: $white;
+    width: 94px;
   }
   .dropdown > a:hover {
     color: $white !important; //bootstrap override
