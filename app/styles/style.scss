@@ -11,7 +11,7 @@
 .glyphicon-lg {
   font-size: 32px;
 }
- :not(button) > .glyphicon {
+:not(button) > .glyphicon {
   color: $glyphicon-default-color; // Glyphicons are grey when not in buttons
 }
 .small,
@@ -21,8 +21,8 @@ small {
 body {
   font-weight: $regular;
 }
-//breadcrumbs
 
+//breadcrumbs
 .breadcrumb {
   > li {
     +li:before {
@@ -33,7 +33,7 @@ body {
     }
   }
   .active {
-      color: $breadcrumb-active-color;
+    color: $breadcrumb-active-color;
   }
 }
 
@@ -54,22 +54,10 @@ body {
 .chv-login {
   .alert {
     border-style: dotted; //FIXME vypada ze vse je v alertu
-    .glyphicon {
-      color: inherit;
-    }
-
-    .form {
-      margin-left: -10px;
-      margin-right: -10px;
-
-      .input-group {
-        //FIXME
-        margin-left: 0;
-        margin-right: 0;
-      };
-    };
   }
-
+  .glyphicon {
+    color: inherit;
+  }
   .input-group {
     margin: 7px; //FIXME
     input,
@@ -77,7 +65,6 @@ body {
       border-color: $black5;
     }
   }
-
   hr {
     margin: 0;
   }
@@ -126,6 +113,7 @@ body {
 }
 .chv-nav2 {
   background-color: $white;
+  border: none;
   .navbar-left li a {
     color: $blue3;
   }
