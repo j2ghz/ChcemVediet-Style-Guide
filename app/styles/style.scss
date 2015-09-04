@@ -39,10 +39,7 @@ body {
 
 //Three panels
 .chv-3 {
-  background: $gray-lighter;
-  .chv-panel-reasons {
-    background-color: inherit;
-  }
+  margin-top: 50px;
 }
 .chv-other-logins {
   margin-bottom: 20px;
@@ -114,6 +111,7 @@ body {
 .chv-nav2 {
   background-color: $white;
   border: none;
+  margin-bottom: 0;
   .navbar-left li a {
     color: $blue3;
   }
@@ -159,5 +157,8 @@ body {
       color: $white;
     }
   }
+}
+.chv-main-panel {
+  background: $blue3;
 }
 @include text-emphasis-variant('.text-primary', $blue3);

@@ -30,20 +30,25 @@ $breadcrumb-active-color: $brand-primary;
 //** Background color for `<body>`.
 // $body-bg:               $blue
 //** Global text color on `<body>`.
-$text-color:            $gray-base;
+$text-color: $gray-base;
+
 //** Global textual link color.
-$link-color:            $brand-primary;
+$link-color: $brand-primary;
+
 //** Link hover color set via `darken()` function.
-$link-hover-color:      darken($link-color, 15%);
+$link-hover-color: darken($link-color, 15%);
+
 //** Link hover decoration.
 $link-hover-decoration: underline;
+
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-$font-family-sans-serif:  "Ubuntu", sans-serif;
-$font-family-serif:  "Ubuntu", sans-serif;
+$font-family-sans-serif: "Ubuntu", sans-serif;
+$font-family-serif: "Ubuntu", sans-serif;
+
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base: "Ubuntu", sans-serif;
 $font-size-base: 16px;
 
@@ -62,6 +67,7 @@ $font-size-base: 16px;
 //** By default, this inherits from the `<body>`.
 // $headings-font-family:    inherit
 $headings-font-weight: 500;
+
 // $headings-line-height:    1.1
 $headings-color: $black3;
 
@@ -561,7 +567,8 @@ $label-primary-hover-bg: $brand-primary;
 //
 //##
 // $panel-bg:                    #fff
-// $panel-body-padding:          15px
+$panel-body-padding: 0 25px 25px;
+
 // $panel-heading-padding:       10px 15px
 // $panel-footer-padding:        $panel-heading-padding
 // $panel-border-radius:         $border-radius-base
