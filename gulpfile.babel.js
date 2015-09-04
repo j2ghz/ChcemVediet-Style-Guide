@@ -200,7 +200,10 @@ gulp.task('serve', ['bootstrap','styles'], () => {
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
     // https: true,
-    server: ['.tmp', 'app']
+    server: ['.tmp', 'app'],
+    ui: {
+    port: 2999
+    }
   });
 
   gulp.watch(['app/**/*.html'], reload);
