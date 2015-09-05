@@ -133,6 +133,22 @@ body {
     font-weight: $medium;
   };
 }
+.chv-stats {
+  background: $black8;
+  .glyphicon {
+    font-size: 32px;
+  };
+  .chv-number {
+    color: $brand-primary;
+    font-size: 48px;
+    font-weight: $medium;
+  };
+  .chv-text {
+    color: $brand-primary-light;
+    position: absolute;
+    top: 1rem;
+  };
+}
 
 //Imported search
 .chv-search {
