@@ -149,11 +149,27 @@ body {
     top: 1rem;
   };
 }
+.chv-news {
+  .chv-bg-default {
+    border: 0;
+  }
+}
 .chv-footer {
   background: $black8;
-  img {
-    width: 20%;
-  };
+  
+  //img {width: 20%;};
+  .chv-footer-links {
+    background: $black2;
+    color: $black4;
+    img {
+      float: right;
+      height: 20px;
+    }
+  }
+}
+.chv-bg-default {
+  background: $black8;
+  color: $white;
 }
 
 //Imported search
