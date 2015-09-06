@@ -172,6 +172,14 @@ body {
   .panel {
     padding-top: 25px;
   }
+  .media-object {
+    height: 96px;
+    width: 96px;
+  }
+  .btn {
+    margin: 25px 7px 0;
+    font-weight: $bold;
+  }
 }
 .chv-footer {
   background: $black8;
