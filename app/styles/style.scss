@@ -45,10 +45,10 @@ body {
   }
 }
 .chv-other-logins {
-  margin-bottom: 20px;
   img {
     height: 30px;
     width: 30px;
+    margin: 1px;
   }
 }
 .chv-login {
@@ -59,11 +59,18 @@ body {
     color: inherit;
   }
   .input-group {
-    margin: 7px; //FIXME
+    height: 42px;
+    margin: 7px 0; //FIXME
+    .form-control {
+      height: 42px;
+    }
     input,
     .input-group-addon {
-      border-color: $black5;
+      border-color: $black7;
     }
+  }
+  form {
+    margin-bottom: 25px;
   }
 }
 .chv-links {
@@ -135,23 +142,35 @@ body {
 }
 .chv-stats {
   background: $black8;
+  padding: 25px 0;
   .glyphicon {
     font-size: 32px;
   };
   .chv-number {
-    color: $brand-primary;
+    color: $blue3;
     font-size: 48px;
-    font-weight: $medium;
+    font-weight: $bold;
+    padding: 0 10px;
   };
   .chv-text {
     color: $brand-primary-light;
+    font-weight: $bold;
     position: absolute;
     top: 1rem;
   };
+  .badge {
+    font-weight: inherit;
+  }
+  .col-md-12 {
+    margin: 10px 0;
+  }
 }
 .chv-news {
   .chv-bg-default {
     border: 0;
+  }
+  .panel {
+    padding-top: 25px;
   }
 }
 .chv-footer {
@@ -169,7 +188,8 @@ body {
 }
 .chv-bg-default {
   background: $black8;
-  color: $white;
+  
+  //color: $white; why is this here? FIXME
 }
 
 //Imported search
@@ -208,12 +228,21 @@ body {
         font-weight: $medium;
       }
     }
+    p {
+      font-size: 16px;
+    }
   }
 }
 .chv-panel-reasons {
   li {
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+}
+.chv-navs {
+  padding: 0;
+  .navbar {
+    padding: 0;
   }
 }
 @include text-emphasis-variant('.text-primary', $blue3);
