@@ -47,8 +47,8 @@ body {
 .chv-other-logins {
   img {
     height: 30px;
-    width: 30px;
     margin: 1px;
+    width: 30px;
   }
 }
 .chv-login {
@@ -74,7 +74,7 @@ body {
   }
 }
 .chv-links {
-  color: $blue2;
+  color: $blue3;
   display: inline-block;
   margin-top: 25px;
   ul {
@@ -117,7 +117,7 @@ body {
 }
 .chv-nav2 {
   background-color: $white;
-  border: none;
+  border: 0;
   margin-bottom: 0;
   .navbar-left li a {
     color: $blue3;
@@ -180,8 +180,8 @@ body {
     color: $black3;
   }
   .btn {
-    margin: 25px 7px 0;
     font-weight: $bold;
+    margin: 25px 7px 0;
   }
 }
 .chv-footer {
@@ -193,11 +193,13 @@ body {
   
   //img {width: 20%;}
   .chv-footer-links {
-    background: $black2;
+    background: $black3;
     color: $black4;
+    padding: 10px 25px;
     img {
       float: right;
       height: 20px;
+      margin: 2.5px;
     }
   }
 }
@@ -250,8 +252,8 @@ body {
 }
 .chv-panel-reasons {
   li {
-    margin-top: 15px;
     margin-bottom: 15px;
+    margin-top: 15px;
   }
 }
 .chv-navs {
