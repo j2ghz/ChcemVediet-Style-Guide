@@ -113,7 +113,7 @@ body {
   .dropdown > a:hover {
     color: $white !important; //bootstrap override
     font-weight: $medium;
-  };
+  }
 }
 .chv-nav2 {
   background-color: $white;
@@ -131,33 +131,33 @@ body {
   }
   .navbar-toggle {
     float: none;
-  };
+  }
   .navbar-nav .chv-nav-highlight:hover {
     background-color: $green3;
     color: $white;
-  };
+  }
   .navbar-nav .chv-nav-login:hover {
     font-weight: $medium;
-  };
+  }
 }
 .chv-stats {
   background: $black8;
   padding: 25px 0;
   .glyphicon {
     font-size: 32px;
-  };
+  }
   .chv-number {
     color: $blue3;
     font-size: 48px;
     font-weight: $bold;
     padding: 0 10px;
-  };
+  }
   .chv-text {
     color: $brand-primary-light;
     font-weight: $bold;
     position: absolute;
     top: 1rem;
-  };
+  }
   .badge {
     font-weight: inherit;
   }
@@ -184,7 +184,7 @@ body {
 .chv-footer {
   background: $black8;
   
-  //img {width: 20%;};
+  //img {width: 20%;}
   .chv-footer-links {
     background: $black2;
     color: $black4;
