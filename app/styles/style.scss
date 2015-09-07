@@ -186,6 +186,10 @@ body {
 }
 .chv-footer {
   background: $black8;
+  .chv-sponsor img {
+    margin: 10px 25px;
+    max-height: 75px;
+  }
   
   //img {width: 20%;}
   .chv-footer-links {
