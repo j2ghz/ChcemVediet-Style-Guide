@@ -23,23 +23,6 @@
   ],
   "scenarios": [
     {
-      "label": "StyleGuide",
-      "url": "http://localhost:3000",
-      "hideSelectors": [],
-      "removeSelectors": [],
-      "selectors": [
-        ".panel:nth-of-type(1)",
-        ".panel:nth-of-type(2)",
-        ".panel:nth-of-type(3)",
-        ".panel:nth-of-type(4)",
-        ".panel:nth-of-type(5)",
-        ".panel:nth-of-type(6)"
-      ],
-      "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.1
-    },
-    {
       "label": "StyleGuide homepage",
       "url": "http://localhost:3000/homepage.html",
       "hideSelectors": [],
