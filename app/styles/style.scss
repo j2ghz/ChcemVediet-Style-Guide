@@ -221,6 +221,7 @@ body {
     background-color: $blue2;
     color: $white;
 	z-index:0 !important;
+	box-shadow:none;
     &::placeholder {
       color: $black5;
     }
@@ -230,11 +231,17 @@ body {
   }
   .input-group-addon {
     background-color: $blue2;
+	border-bottom-right-radius:4px !important;
+	border-top-right-radius:4px !important;
+	&:hover{
+	  background-color:$blue1;
+	}
     .glyphicon {
       color: $white;
     }
   }
   .input-shadow{
+	border-radius:4px;
 	display:none;
 	position:absolute;
 	left:0px;
