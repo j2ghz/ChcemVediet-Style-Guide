@@ -6,12 +6,17 @@
 
 Latest master is being deployed to http://j2ghz.github.io/ChcemVediet-Style-Guide/
 
-TODO: description
+# How to compile latest version
+* `npm install`
+* `npm install gulp -g`
+* `gulp`
+* take the contents of `dist/` folder (mainly `fonts`, `javascripts` and `styles`, htmls are for reference, the other files should not be necessary)
 
 ## Commands
 * Install dependencies
- * `npm install` (runs `bower update` aswell)
+ * `npm install`
 * Build and start watching
+ * if you don't have gulp `npm install gulp -g`
  * `gulp serve`
 * Build production ready version
  * `gulp`
