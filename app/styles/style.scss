@@ -21,7 +21,9 @@ small {
 body {
   font-weight: $regular;
 }
-
+h3{
+  font-size:24px;
+}
 //breadcrumbs
 .breadcrumb {
   > li {
@@ -110,8 +112,10 @@ body {
     color: $white;
     width: 94px;
   }
+  .dropdown > a{
+	color: $white !important; //bootstrap override
+  }
   .dropdown > a:hover {
-    color: $white !important; //bootstrap override
     font-weight: $medium;
   }
 }
@@ -209,6 +213,9 @@ body {
 
 //Imported search
 .chv-search {
+  input,.input-group-addon{
+    border:0;
+  }
   .input-group-addon .glyphicon {
     color: $blue3;
   }
@@ -241,8 +248,8 @@ body {
     }
   }
   .input-shadow{
-	border-radius:4px;
 	display:none;
+	border-radius:4px;
 	position:absolute;
 	left:0px;
 	top:0px;
