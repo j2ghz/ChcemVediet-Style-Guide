@@ -287,5 +287,20 @@ h3{
   .navbar {
     padding: 0;
   }
+  ul li{
+    display:inline;
+	a{
+	  display:inline;
+	  float:right;
+	}
+  }
+}
+@media (min-width: 768px) {
+  .chv-navs ul li{
+    display:block;
+	a{
+	  display:block;
+	}
+  }
 }
 @include text-emphasis-variant('.text-primary', $blue3);
