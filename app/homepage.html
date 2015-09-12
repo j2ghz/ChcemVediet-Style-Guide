@@ -55,6 +55,9 @@
               <div class="input-group-addon">
                 <span class="glyphicon glyphicon-search"></span>
               </div>
+			  <div class="input-shadow">
+			  <!-- invisible div used for shadow, no other workaround possible -->
+			  <div>
             </div>
           </form>
         </div>
@@ -353,6 +356,17 @@
   <!-- one for dev and one for deploy; only one at a time FIXME remove in production -->
   <script src="javascripts/bootstrap/bootstrap.js"></script>
   <script src="javascripts/main.min.js"></script>
+  <script>
+  //move to separate file, custom js
+  $(function(){ //box shadow on focus of search in navbar
+	$(".chv-search-inverse input").focusin(function(){
+		$(".input-shadow").show();
+	});
+	$(".chv-search-inverse input").focusout(function(){
+		$(".input-shadow").hide();
+	});
+  })
+  </script>
 </body>
 
 </html>
