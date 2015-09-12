@@ -53,14 +53,14 @@ body {
 }
 .chv-login {
   .alert {
-    border-style: dotted; //FIXME vypada ze vse je v alertu
+    border-style: dotted;
   }
   .glyphicon {
     color: inherit;
   }
   .input-group {
     height: 42px;
-    margin: 7px 0; //FIXME
+    margin: 7px 0;
     .form-control {
       height: 42px;
     }
@@ -190,7 +190,7 @@ body {
     margin: 10px 25px;
     max-height: 75px;
   }
-  
+
   //img {width: 20%;}
   .chv-footer-links {
     background: $black3;
@@ -205,8 +205,6 @@ body {
 }
 .chv-bg-default {
   background: $black8;
-  
-  //color: $white; why is this here? FIXME
 }
 
 //Imported search
