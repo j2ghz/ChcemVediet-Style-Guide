@@ -20,5 +20,5 @@ Latest master is being deployed to http://j2ghz.github.io/ChcemVediet-Style-Guid
  * `gulp serve`
 * Build production ready version
  * `gulp`
-* Get google pagespeed results
+* Get Google pagespeed results
  * `gulp pagespeed`
