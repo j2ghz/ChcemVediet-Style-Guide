@@ -293,7 +293,7 @@ h3{
 	}
   }
 }
-@media (min-width: 768px) {
+@media (min-width: $screen-sm-min) {
   .chv-navs ul li{
     display:block;
 	a{
