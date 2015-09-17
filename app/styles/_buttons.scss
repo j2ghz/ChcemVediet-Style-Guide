@@ -1,7 +1,7 @@
 // scss-lint:disable EmptyLineBetweenBlocks FinalNewline
 @mixin chv-btn-color($bg, $text) {
   color: $text;
-  background-color: $bg;
+  background: $bg;
   border: 1px solid $bg;
   span.glyphicon {
     color: $text;
@@ -9,7 +9,7 @@
 }
 @mixin chv-btn-variant ($bg, $color, $click) {
   color: $color;
-  background: $bg;
+  background: transparent;
   &:hover {
     @include chv-btn-color($color, $bg)
   }
