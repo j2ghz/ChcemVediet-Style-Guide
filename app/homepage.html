@@ -319,11 +319,31 @@
         </div>
         <div class="col-md-4">
           <h3 class="text-center text-primary">Vedeli ste?</h3>
-          <div class="panel panel-default chv-bg-default text-center">
-            <div class="panel-body">
-              Podla zákona
-              <br><a class="btn btn-primary">Tweet</a><a class="btn btn-primary">Share</a>
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="panel panel-default chv-bg-default text-center">
+                  <div class="panel-body">
+                    Podla zákona
+                    <br><a class="btn btn-primary">Tweet</a><a class="btn btn-primary">Share</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="panel panel-default chv-bg-default text-center">
+                  <div class="panel-body">
+                    Podla zákona nieco ine
+                    <br><a class="btn btn-primary">Tweet</a><a class="btn btn-primary">Share</a>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
           </div>
         </div>
       </div>
