@@ -75,6 +75,11 @@ h3 {
 .chv-steps {.lead {
     color: $white;
   }
+  > .glyphicon {
+    color: $blue2;
+    float: left;
+    top: 50%;
+  }
 }
 .chv-links {
   color: $blue3;
