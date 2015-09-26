@@ -237,6 +237,11 @@ h3 {
   .input-group-addon {
     border: 0;
   }
+  input:focus,
+  input:active:focus {
+    border: none;
+    box-shadow: inset 0 0 1px 1px $blue5;
+  }
   .input-group-addon .glyphicon {
     color: $blue3;
   }
