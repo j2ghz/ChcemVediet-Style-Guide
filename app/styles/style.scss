@@ -178,6 +178,14 @@ h3 {
   .navbar-nav .chv-nav-login:hover {
     font-weight: $medium;
   }
+  .dropdown-menu {
+    background: $blue5;
+    width: 100%;
+    text-align: left;
+    a {
+      color: $white;
+    }
+  }
 }
 .chv-stats {
   background: $black8;
