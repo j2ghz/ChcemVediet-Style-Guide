@@ -9,6 +9,7 @@
 }
 @mixin chv-btn-variant ($bg, $color, $click) {
   color: $color;
+  font-weight: $bold;
   background: transparent;
   padding-top: 10px;
   padding-bottom: 10px;
