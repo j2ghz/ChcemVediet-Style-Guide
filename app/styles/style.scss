@@ -89,7 +89,7 @@ h3 {
     min-height: 1px;
     position: relative;
     width: percentage((.9 / 4));
-    
+
     //display: block;
     //margin-left: auto;
     //margin-right: auto;
@@ -151,7 +151,7 @@ h3 {
   }
 }
 .chv-nav2 {
-  background-color: $white;
+  background-color: $black5;
   border: 0;
   margin-bottom: 0;
   .navbar-left li a {
@@ -159,6 +159,21 @@ h3 {
     &:hover {
       color: $blue3;
       font-weight: $bold;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0px;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 8px solid $black5;
+    }
+
+    &:hover:after {
+      border-bottom-color: $blue3;
     }
   }
   li a.chv-nav-highlight {
@@ -248,7 +263,7 @@ h3 {
   .chv-zoznam {
     color: $black4;
   }
-  
+
   //img {width: 20%;}
   .chv-footer-links {
     background: $black3;
