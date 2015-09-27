@@ -116,6 +116,7 @@ h3 {
     li {
       clear: left;
       float: left;
+      margin: 3px 0;
     }
   }
   .glyphicon {
@@ -350,7 +351,8 @@ h3 {
     }
   }
 }
-.chv-panel-reasons {li {
+.chv-panel-reasons {
+  li {
     margin-bottom: 15px;
     margin-top: 15px;
   }
