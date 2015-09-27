@@ -10,6 +10,8 @@
 @mixin chv-btn-variant ($bg, $color, $click) {
   color: $color;
   background: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
   &:hover {
     @include chv-btn-color($color, $bg)
   }
