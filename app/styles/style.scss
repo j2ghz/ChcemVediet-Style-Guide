@@ -209,6 +209,10 @@ h3 {
 .chv-stats {
   background: $black8;
   padding: 25px 0;
+  > div {
+  display: flex;
+  align-items: center;
+}
   .glyphicon {
     font-size: 24px;
   }
@@ -221,8 +225,6 @@ h3 {
   .chv-text {
     color: $brand-primary-light;
     font-weight: $bold;
-    position: absolute;
-    top: 1rem;
   }
   .badge {
     font-weight: inherit;
