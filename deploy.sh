@@ -11,7 +11,6 @@ set -ev # exit with nonzero exit code if anything fails
 # go to the out directory and create a *new* Git repo
 cd dist
 git init
-#TODO: deploy PR's as well
 # inside this git repo we'll pretend to be a new user
 git config user.name "Travis CI"
 git config user.email "j2.00ghz@gmail.com"
