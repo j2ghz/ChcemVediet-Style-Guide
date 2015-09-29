@@ -26,7 +26,9 @@ h3 {
 }
 
 //breadcrumbs
-.breadcrumb {> li {+li:before {
+.breadcrumb {
+  > li {
+    +li:before {
       content: $breadcrumb-separator;
     }
     > a {
@@ -45,13 +47,15 @@ h3 {
     margin-top: 0;
   }
 }
-.chv-other-logins {img {
+.chv-other-logins {
+  img {
     height: 34px;
     margin: 2px;
     width: 34px;
   }
 }
-.chv-login {.glyphicon {
+.chv-login {
+  .glyphicon {
     color: inherit;
   }
   .form-control {
@@ -89,7 +93,7 @@ h3 {
     min-height: 1px;
     position: relative;
     width: percentage((.9 / 4));
-
+    
     //display: block;
     //margin-left: auto;
     //margin-right: auto;
@@ -156,7 +160,7 @@ h3 {
   border: 0;
   margin-bottom: 0;
   .navbar-left li:nth-of-type(1) a {
-    padding-left:0;
+    padding-left: 0;
   }
   .navbar-left li a {
     color: $blue3;
@@ -168,14 +172,13 @@ h3 {
       content: '';
       position: absolute;
       left: 50%;
-      bottom: 0px;
+      bottom: 0;
       width: 0;
       height: 0;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
       border-bottom: 8px solid $black5;
     }
-
     &:hover:after {
       border-bottom-color: $blue3;
     }
@@ -210,9 +213,9 @@ h3 {
   background: $black8;
   padding: 25px 0;
   > div {
-  display: flex;
-  align-items: center;
-}
+    display: flex;
+    align-items: center;
+  }
   .glyphicon {
     font-size: 24px;
   }
@@ -242,7 +245,8 @@ h3 {
     margin: 10px 0;
   }
 }
-.chv-news {.chv-bg-default {
+.chv-news {
+  .chv-bg-default {
     border: 0;
   }
   .panel {
@@ -270,7 +274,7 @@ h3 {
     color: $black4;
     margin-right: 10px;
   }
-
+  
   //img {width: 20%;}
   .chv-footer-links {
     background: $black3;
@@ -288,7 +292,8 @@ h3 {
 }
 
 //Imported search
-.chv-search {input,
+.chv-search {
+  input,
   .input-group-addon {
     border: 0;
   }
@@ -301,7 +306,8 @@ h3 {
     color: $blue3;
   }
 }
-.chv-search-inverse {* {
+.chv-search-inverse {
+  * {
     border: 0;
   }
   input {
@@ -381,7 +387,8 @@ h3 {
     }
   }
 }
-@media (min-width: $screen-sm-min) {.chv-navs ul li {
+@media (min-width: $screen-sm-min) {
+  .chv-navs ul li {
     display: block;
     a {
       display: block;
