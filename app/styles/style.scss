@@ -159,6 +159,24 @@ h3 {
   background-color: $black5;
   border: 0;
   margin-bottom: 0;
+  .navbar-toggle .icon-bar {
+    background-color: $blue3;
+    font-weight: $bold;
+  }
+  .navbar-toggle:not(.collapsed) {
+    background-color: $black3;
+    .icon-bar {
+      background-color: $white;
+      font-weight: $bold;
+    }
+  }
+  #bs-example-navbar-collapse-2.in,
+  #bs-example-navbar-collapse-2.collapsing {
+    background-color: $black3;
+    a {
+      color: $white;
+    }
+  }
   .chv-user {
     width: 50px;
     height: 50px;
@@ -175,8 +193,10 @@ h3 {
       background: $blue4;
     }
   }
-  .navbar-left li:nth-of-type(1) a {
-    padding-left: 0;
+  @media (min-width: $screen-sm-min) {
+    .navbar-left li:nth-of-type(1) a {
+      padding-left: 0;
+    }
   }
   .navbar-left li a {
     color: $blue3;
@@ -401,20 +421,22 @@ h3 {
   .navbar {
     padding: 0;
   }
-  /*ul li {
-    display: inline;
-    a {
-      display: inline;
+  .chv-nav2 >div> ul.navbar-right li {
+    float: right;
+    height: 100%;
+    &:nth-of-type(1) {
+      float: left;
     }
-  }*/
+    a {
+      height: 100%;
+    }
+  }
 }
 @media (min-width: $screen-sm-min) {
   .chv-navs ul li {
-    
-    //display: block;
+    display: block;
     a {
-      
-      //display: block;
+      display: block;
     }
   }
 }
@@ -464,5 +486,17 @@ h3 {
   .glyphicon {
     background-color: $blue5;
   }
+}
+.carousel-indicators {
+  li {
+    color: $blue6;
+  }
+  li.active {
+    color: $blue3;
+  }
+}
+.navbar-nav {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 @include text-emphasis-variant('.text-primary', $blue3);
