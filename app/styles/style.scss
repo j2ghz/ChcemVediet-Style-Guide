@@ -159,6 +159,22 @@ h3 {
   background-color: $black5;
   border: 0;
   margin-bottom: 0;
+  .chv-user {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div {
+      border-radius: 50%;
+      width: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 36px;
+      background: $blue4;
+    }
+  }
   .navbar-left li:nth-of-type(1) a {
     padding-left: 0;
   }
@@ -203,9 +219,9 @@ h3 {
   }
   .dropdown-menu {
     background: $white;
-    display: table;
+    /*display: table;*/
     li {
-      display: table-row;
+      /*display: table-row;*/
     }
     a {
       &:hover {
@@ -385,19 +401,20 @@ h3 {
   .navbar {
     padding: 0;
   }
-  ul li {
+  /*ul li {
     display: inline;
     a {
       display: inline;
-      float: right;
     }
-  }
+  }*/
 }
 @media (min-width: $screen-sm-min) {
   .chv-navs ul li {
-    display: block;
+    
+    //display: block;
     a {
-      display: block;
+      
+      //display: block;
     }
   }
 }
