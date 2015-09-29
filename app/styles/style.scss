@@ -186,6 +186,10 @@ h3 {
   li a.chv-nav-highlight {
     background-color: $green4;
     color: $white;
+    &:hover {
+      background-color: $green3;
+      color: $white;
+    }
   }
   .navbar-right {
     margin-right: 0;
@@ -193,12 +197,9 @@ h3 {
   .navbar-toggle {
     float: none;
   }
-  .navbar-nav .chv-nav-highlight:hover {
-    background-color: $green3;
-    color: $white;
-  }
   .navbar-nav .chv-nav-login:hover {
     font-weight: $medium;
+    height: 100%;
   }
   .dropdown-menu {
     background: $blue5;
