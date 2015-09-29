@@ -202,11 +202,16 @@ h3 {
     height: 100%;
   }
   .dropdown-menu {
-    background: $blue5;
-    width: 100%;
-    text-align: left;
+    background: $white;
+    display: table;
+    li {
+      display: table-row;
+    }
     a {
-      color: $white;
+      &:hover {
+        background: $black5;
+        font-weight: $bold;
+      }
     }
   }
 }
