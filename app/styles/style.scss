@@ -305,6 +305,45 @@ h3 {
     font-weight: $bold;
     margin: 25px 7px 0;
   }
+  .carousel {
+    .panel-default {
+      border: 0;
+    }
+    .item .panel {
+      margin-bottom: 60px;
+      .panel-body {
+        background-color: $blue7;
+        border-radius: 10px;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        border-top: solid 10px $blue7;
+        border-left: solid 10px transparent;
+        border-right: solid 10px transparent;
+      }
+    }
+    .item:nth-of-type(1) .panel:after {
+      margin-left: 45%;
+    }
+    .item:nth-of-type(2) .panel:after {
+      margin-left: 49%;
+    }
+    .carousel-indicators {
+      li {
+        background-color: $blue7;
+      }
+      li.active {
+        background-color: $blue5;
+      }
+    }
+  }
 }
 .chv-footer {
   background: $black8;
@@ -485,14 +524,6 @@ h3 {
   color: $blue3;
   .glyphicon {
     background-color: $blue5;
-  }
-}
-.carousel-indicators {
-  li {
-    color: $blue6;
-  }
-  li.active {
-    color: $blue3;
   }
 }
 .navbar-nav {
