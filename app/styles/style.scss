@@ -308,12 +308,14 @@ h3 {
   .carousel {
     .panel-default {
       border: 0;
+      padding-top: 0;
     }
     .item .panel {
       margin-bottom: 60px;
       .panel-body {
         background-color: $blue7;
         border-radius: 10px;
+        padding-top: 25px;
       }
       &:after {
         content: '';
