@@ -13,9 +13,11 @@
   background: transparent;
   padding-top: 10px;
   padding-bottom: 10px;
-  &:hover {
+  &:hover,
+  &:hover:focus {
     @include chv-btn-color($color, $bg)
   }
+  &:hover:active:focus,
   &:hover:active,
   &:active {
     @include chv-btn-color($click, $bg)

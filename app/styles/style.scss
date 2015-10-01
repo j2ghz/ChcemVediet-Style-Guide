@@ -371,6 +371,18 @@ h3 {
   .chv-zoznam {
     color: $black4;
     margin-right: 10px;
+    &:hover,
+    &:hover:focus {
+      color: $white;
+      background-color: $brand-primary;
+      &:active {
+        color: $white;
+        background-color: $brand-primary-light;
+      }
+    }
+    &:focus {
+      background-color: transparent;
+    }
   }
   
   //img {width: 20%;}
