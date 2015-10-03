@@ -1,0 +1,251 @@
+//Three panels
+.chv-3 {
+  margin-top: 50px;
+  hr {
+    margin-top: 0;
+  }
+}
+.chv-other-logins {
+  img {
+    height: 34px;
+    margin: 2px;
+    width: 34px;
+  }
+}
+.chv-login {
+  .glyphicon {
+    color: inherit;
+  }
+  .form-control {
+    box-shadow: none;
+  }
+  .input-group {
+    height: 42px;
+    margin: 7px 0;
+    .form-control {
+      height: 42px;
+    }
+    input,
+    .input-group-addon {
+      border-color: $black7;
+    }
+    input:focus::placeholder {
+      color: $white;
+    }
+  }
+  form {
+    margin-bottom: 25px;
+  }
+}
+.chv-steps {
+  align-items: center;
+  display: flex;
+  .lead {
+    color: $white;
+  }
+  > .glyphicon {
+    color: $blue2;
+    float: left;
+    font-size: (10 / 3) * 0.75vw;
+    top: 50%;
+  }
+  div {
+    float: left;
+    min-height: 1px;
+    position: relative;
+    width: percentage((.9 / 4));
+    
+    //display: block;
+    //margin-left: auto;
+    //margin-right: auto;
+  }
+  span {
+    float: left;
+    margin-bottom: auto;
+    margin-top: auto;
+    min-height: 1px;
+    position: relative;
+    width: percentage((.1 / 3));
+  }
+  img {
+    width: 50%;
+  }
+}
+.chv-links {
+  color: $blue3;
+  display: inline-block;
+  margin-top: 25px;
+  ul {
+    clear: left;
+    float: left;
+    li {
+      clear: left;
+      float: left;
+      margin: 3px 0;
+    }
+  }
+  .glyphicon {
+    color: inherit;
+    margin-right: 10px;
+  }
+  a {
+    color: inherit;
+  }
+}
+.chv-stats {
+  background: $black8;
+  padding: 25px 0;
+  > div {
+    display: flex;
+    align-items: center;
+  }
+  .glyphicon {
+    font-size: 24px;
+  }
+  .chv-number {
+    color: $blue3;
+    font-size: 64px;
+    font-weight: $bold;
+    padding: 0 10px;
+  }
+  .chv-text {
+    color: $brand-primary-light;
+    font-weight: $bold;
+  }
+  .badge {
+    font-weight: inherit;
+    margin-right: 5px;
+  }
+  .chv-stat-icon {
+    background: #3766cb;
+    border-radius: 50%;
+    padding: 16px;
+    .glyphicon {
+      color: $black8;
+    }
+  }
+  .col-md-12 {
+    margin: 10px 0;
+  }
+}
+.chv-news {
+  .chv-bg-default {
+    border: 0;
+  }
+  .panel {
+    padding-top: 25px;
+  }
+  .media-object {
+    height: 96px;
+    width: 96px;
+  }
+  .media-heading {
+    color: $black3;
+  }
+  .btn {
+    font-weight: $bold;
+    margin: 25px 7px 0;
+  }
+  .carousel {
+    .panel-default {
+      border: 0;
+      padding-top: 0;
+    }
+    .item .panel {
+      margin-bottom: 60px;
+      .panel-body {
+        background-color: $blue7;
+        border-radius: 10px;
+        padding-top: 25px;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        border-top: solid 10px $blue7;
+        border-left: solid 10px transparent;
+        border-right: solid 10px transparent;
+      }
+    }
+    .item:nth-of-type(1) .panel:after {
+      margin-left: 45%;
+    }
+    .item:nth-of-type(2) .panel:after {
+      margin-left: 49%;
+    }
+    .carousel-indicators {
+      li {
+        background-color: $blue7;
+      }
+      li.active {
+        background-color: $blue5;
+      }
+    }
+  }
+}
+.chv-footer {
+  background: $black8;
+  .chv-sponsor img {
+    margin: 10px 25px;
+    max-height: 75px;
+  }
+  .chv-zoznam {
+    color: $black4;
+    margin-right: 10px;
+    &:hover,
+    &:hover:focus {
+      color: $white;
+      background-color: $brand-primary;
+      &:active {
+        color: $white;
+        background-color: $brand-primary-light;
+      }
+    }
+    &:focus {
+      background-color: transparent;
+    }
+  }
+  
+  //img {width: 20%;}
+  .chv-footer-links {
+    background: $black3;
+    color: $black4;
+    padding: 10px 25px;
+    img {
+      float: right;
+      height: 20px;
+      margin: 2.5px;
+    }
+  }
+}
+.chv-main-panel {
+  background: $blue3;
+  .jumbotron {
+    background-color: $blue3;
+    color: $white;
+    h1 {
+      font-size: 36px;
+      font-weight: $regular;
+      span {
+        font-weight: $medium;
+      }
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+.chv-panel-reasons {
+  li {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .btn-primary {
+    width: 75%;
+  }
+}
