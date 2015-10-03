@@ -71,6 +71,9 @@ h3 {
     .input-group-addon {
       border-color: $black7;
     }
+    input:focus::placeholder {
+      color: $white;
+    }
   }
   form {
     margin-bottom: 25px;
@@ -431,6 +434,9 @@ h3 {
     box-shadow: none;
     &::placeholder {
       color: $black5;
+    }
+    &:focus::placeholder {
+      color: $blue2;
     }
     &:focus {
       box-shadow: none;
