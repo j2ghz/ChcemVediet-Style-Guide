@@ -1,0 +1,166 @@
+.chv-nav {
+  background-color: $blue3;
+  margin-bottom: 0;
+  border-bottom-width: 0;
+  .navbar-brand {
+    color: $white;
+    font-weight: $regular;
+    .badge {
+      background-color: $blue5;
+      font-size: 12px;
+      font-weight: $regular;
+    }
+  }
+  .navbar-right li a {
+    color: $white;
+    width: 94px;
+  }
+  .dropdown > a {
+    color: $white !important; //bootstrap override
+  }
+  .dropdown > a:hover {
+    font-weight: $medium;
+  }
+}
+.chv-nav2 {
+  background-color: $black8;
+  border: 0;
+  margin-bottom: 0;
+  .navbar-toggle {
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    border-radius: 0;
+    .icon-bar {
+      background-color: $blue3;
+      font-weight: $bold;
+    }
+    &:not(.collapsed) {
+      background-color: $black3;
+      .icon-bar {
+        background-color: $white;
+        font-weight: $bold;
+      }
+    }
+  }
+  #bs-example-navbar-collapse-2 {
+    border: 0;
+    box-shadow: none;
+  }
+  #bs-example-navbar-collapse-2.in,
+  #bs-example-navbar-collapse-2.collapsing {
+    background-color: $black3;
+    a {
+      color: $white;
+    }
+  }
+  .chv-user {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div {
+      border-radius: 50%;
+      width: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 36px;
+      background: $blue4;
+    }
+  }
+  @media (min-width: $screen-sm-min) {
+    .navbar-left li:nth-of-type(1) a {
+      padding-left: 0;
+    }
+  }
+  .navbar-left li a {
+    color: $blue3;
+    &:hover {
+      color: $blue3;
+      font-weight: $bold;
+    }
+    @media (min-width: $screen-sm-min) {
+      &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid $black8;
+      }
+    }
+    &:hover:after {
+      border-bottom-color: $blue3;
+    }
+  }
+  li a.chv-nav-highlight {
+    background-color: $green4;
+    color: $white;
+    &:hover {
+      background-color: $green3;
+      color: $white;
+    }
+  }
+  .navbar-right {
+    margin-right: 0;
+  }
+  .navbar-toggle {
+    float: none;
+  }
+  .navbar-nav .chv-nav-login:hover {
+    font-weight: $medium;
+    height: 100%;
+  }
+  ul.navbar-nav li {
+    height: 50px;
+  }
+  .dropdown-menu {
+    background: $white;
+    /*display: table;*/
+    li {
+      /*display: table-row;*/
+    }
+    a {
+      &:hover {
+        background: $black5;
+        font-weight: $bold;
+      }
+    }
+  }
+}
+
+//navbar
+.chv-navs {
+  padding: 0;
+  .navbar {
+    padding: 0;
+  }
+  .chv-nav2 >div> ul.navbar-right li {
+    float: right;
+    height: 50px;
+    &:nth-of-type(1) {
+      float: left;
+    }
+    a {
+      height: 100%;
+    }
+  }
+}
+@media (min-width: $screen-sm-min) {
+  .chv-navs ul li {
+    display: block;
+    a {
+      display: block;
+    }
+  }
+}
+.navbar-nav {
+  margin-bottom: 0;
+  margin-top: 0;
+}

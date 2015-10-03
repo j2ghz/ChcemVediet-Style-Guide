@@ -1,0 +1,46 @@
+//alerts and messages
+.alert {
+  border-style: dotted;
+  text-align: center;
+  background-color: white;
+  .glyphicon {
+    color: inherit;
+  }
+}
+.alert-warning {
+  color: $orange3;
+  border-color: $orange3;
+}
+.alert-success {
+  color: $green3;
+  border-color: $green3;
+}
+.alert-info {
+  color: $blue3;
+  border-color: $blue3;
+}
+.message {
+  font-size: 20px;
+  padding: 0;
+  .glyphicon {
+    color: $white;
+    padding: 10px;
+    background-color: $orange4;
+    top: 0;
+    margin-right: 10px;
+  }
+}
+.message-warning {
+  background-color: $orange8;
+  color: $orange3;
+  .glyphicon {
+    background-color: $orange4;
+  }
+}
+.message-info {
+  background-color: $blue8;
+  color: $blue3;
+  .glyphicon {
+    background-color: $blue5;
+  }
+}
