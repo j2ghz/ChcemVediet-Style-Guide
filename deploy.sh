@@ -7,6 +7,7 @@ set -ev # exit with nonzero exit code if anything fails
 
 # run our compile script, discussed above
 #gulp
+cp circle.yml dist/
 
 # go to the out directory and create a *new* Git repo
 cd dist
@@ -18,7 +19,7 @@ git config user.email "j2.00ghz@gmail.com"
 # The first and only commit to this new Git repo contains all the
 # files present with the commit message "Deploy to GitHub Pages".
 git add -A
-git commit -m "Deploy to GitHub Pages [ci skip]"
+git commit -m "Deploy to GitHub Pages"
 
 # Force push from the current repo's master branch to the remote
 # repo's gh-pages branch. (All previous history on the gh-pages branch
