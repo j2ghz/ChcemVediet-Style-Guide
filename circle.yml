@@ -1,7 +1,6 @@
 dependencies:
   override:
     - npm install --dev
-dependencies:
   cache_directories:
     - "node_modules"
 deployment:
@@ -13,6 +12,3 @@ general:
   branches:
     ignore:
       - gh-pages
-general:
-  artifacts:
-    - "dist"
