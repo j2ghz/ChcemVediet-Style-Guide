@@ -70,6 +70,15 @@
   img {
     width: 50%;
   }
+  
+  //mobile
+  #chv-steps-carousel {
+    margin-bottom: 50px;
+    width: 100%;
+    .item img {
+      @include center-block();
+    }
+  }
 }
 .chv-links {
   color: $blue3;
