@@ -5,6 +5,7 @@
 [![Code Climate](https://img.shields.io/codeclimate/github/j2ghz/ChcemVediet-Style-Guide.svg)](https://codeclimate.com/github/j2ghz/ChcemVediet-Style-Guide)
 [![SensioLabsInsight](https://img.shields.io/sensiolabs/i/a2046e6e-ba8a-4fc3-ad9e-2c65a8d0e9fb.svg)](https://insight.sensiolabs.com/projects/a2046e6e-ba8a-4fc3-ad9e-2c65a8d0e9fb)
 [![Dependency Status](https://img.shields.io/gemnasium/j2ghz/ChcemVediet-Style-Guide.svg)](https://gemnasium.com/j2ghz/ChcemVediet-Style-Guide)
+[![Issues](https://img.shields.io/github/issues-raw/j2ghz/ChcemVediet-Style-Guide.svg)](https://github.com/j2ghz/ChcemVediet-Style-Guide/issues)
 
 Latest master is being deployed to http://j2ghz.github.io/ChcemVediet-Style-Guide/
 
