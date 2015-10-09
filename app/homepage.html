@@ -22,10 +22,10 @@
 </head>
 
 <body>
-  <div class="container chv-navs">
+  <div class="container-fluid chv-navs">
     <!-- paste from navbar -->
     <nav class="navbar navbar-default navbar-static-top chv-nav">
-      <div class="container-fluid">
+      <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <a class="navbar-brand" href="#">
@@ -53,10 +53,10 @@
           </div>
         </form>
       </div>
-      <!-- /.container-fluid -->
+      <!-- /.container -->
     </nav>
     <nav class="navbar navbar-default navbar-static-top chv-nav2">
-      <div class="container-fluid">
+      <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <ul class="nav navbar-nav navbar-right">
           <li class="navbar-toggle collapsed hidden-lg hidden-md" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
@@ -96,86 +96,87 @@
         </div>
         <!-- /.navbar-collapse -->
       </div>
-      <!-- /.container-fluid -->
+      <!-- /.container -->
     </nav>
   </div>
-  <div class="container">
+  <div>
     <!-- paste from index.html.old -->
-    <div class="row chv-main-panel">
-      <div class="col-sm-6 col-sm-offset-3 jumbotron text-center">
-        <h1>
-          Čo chceš
-          <span>vedieť?</span>
-        </h1>
-        <form class="form">
-          <div class="form-group">
-            <div class="input-group chv-search">
-              <input type="text" class="form-control" placeholder="Hľadaj v infožiadostiach...">
-              <div class="input-group-addon">
-                <span class="glyphicon glyphicon-search"></span>
+      <div class="chv-main-panel"><div class="container"><div class="row">
+        <div class="col-sm-6 col-sm-offset-3 jumbotron text-center">
+          <h1>
+            Čo chceš
+            <span>vedieť?</span>
+          </h1>
+          <form class="form">
+            <div class="form-group">
+              <div class="input-group chv-search">
+                <input type="text" class="form-control" placeholder="Hľadaj v infožiadostiach...">
+                <div class="input-group-addon">
+                  <span class="glyphicon glyphicon-search"></span>
+                </div>
+              </div>
+            </div>
+          </form>
+          <p class="lead">...alebo podaj infožiadosť cez tento portál.</p>
+          <p class="lead">Je to jednoduché:</p>
+        </div>
+        <div class="col-sm-12 row text-center chv-steps hidden-xs hidden-sm">
+          <div>
+            <img src="images/step01.svg">
+            <p class="lead">Zaregistruj sa</p>
+          </div>
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <div>
+            <img src="images/step02.svg">
+            <p class="lead">Nájdi inštitúciu</p>
+          </div>
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <div>
+            <img src="images/step03.svg">
+            <p class="lead">Podaj infožiadosť</p>
+          </div>
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <div>
+            <img src="images/step04.svg">
+            <p class="lead">Čakaj pripomienku</p>
+          </div>
+        </div>
+        <div class="col-sm-12 row text-center chv-steps hidden-md hidden-lg" href="#chv-steps-carousel" data-slide="next">
+          <div id="chv-steps-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <span></span>
+                <img src="images/step01.svg">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <p class="lead">Zaregistruj sa</p>
+              </div>
+              <div class="item">
+                <span></span>
+                <img src="images/step02.svg">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <p class="lead">Nájdi inštitúciu</p>
+              </div>
+              <div class="item">
+                <span></span>
+                <img src="images/step03.svg">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <p class="lead">Podaj infožiadosť</p>
+              </div>
+              <div class="item">
+                <span></span>
+                <img src="images/step04.svg">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <p class="lead">Čakaj pripomienku</p>
               </div>
             </div>
           </div>
-        </form>
-        <p class="lead">...alebo podaj infožiadosť cez tento portál.</p>
-        <p class="lead">Je to jednoduché:</p>
-      </div>
-      <div class="col-sm-12 row text-center chv-steps hidden-xs hidden-sm">
-        <div>
-          <img src="images/step01.svg">
-          <p class="lead">Zaregistruj sa</p>
         </div>
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <div>
-          <img src="images/step02.svg">
-          <p class="lead">Nájdi inštitúciu</p>
-        </div>
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <div>
-          <img src="images/step03.svg">
-          <p class="lead">Podaj infožiadosť</p>
-        </div>
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <div>
-          <img src="images/step04.svg">
-          <p class="lead">Čakaj pripomienku</p>
-        </div>
-      </div>
-      <div class="col-sm-12 row text-center chv-steps hidden-md hidden-lg" href="#chv-steps-carousel" data-slide="next">
-        <div id="chv-steps-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+      </div></div></div>
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <span></span>
-              <img src="images/step01.svg">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <p class="lead">Zaregistruj sa</p>
-            </div>
-            <div class="item">
-              <span></span>
-              <img src="images/step02.svg">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <p class="lead">Nájdi inštitúciu</p>
-            </div>
-            <div class="item">
-              <span></span>
-              <img src="images/step03.svg">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <p class="lead">Podaj infožiadosť</p>
-            </div>
-            <div class="item">
-              <span></span>
-              <img src="images/step04.svg">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <p class="lead">Čakaj pripomienku</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- paste from threepanels -->
-    <div class="row chv-3">
+    <div class="chv-3"><div class="container"><div class="row">
       <div class="col-sm-4">
         <div class="">
           <div class="panel-body">
@@ -307,8 +308,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="row chv-stats">
+    </div></div></div>
+    <div class="chv-stats"><div class="container"><div class="row">
       <div class="col-sm-4">
         <span class="badge chv-stat-icon">
           <span class="glyphicon glyphicon-home"></span>
@@ -344,8 +345,8 @@
           <span class="badge">beta</span> Portál chcemvediet.sk funguje v testovacej prevádzke
         </span>
       </div>
-    </div>
-    <div class="row chv-news">
+    </div></div></div>
+    <div class="chv-news"><div class="container"><div class="row">
       <div class="col-sm-4">
         <h3 class="text-center text-primary">Financovanie</h3>
         <div class="panel panel-default chv-bg-default text-center">
@@ -417,8 +418,8 @@
           </ol>
         </div>
       </div>
-    </div>
-    <div class="row chv-footer">
+    </div></div></div>
+    <div class="chv-footer"><div class="container"><div class="row">
       <div class="col-sm-8 chv-sponsor">
         <h5>Partneri projektu</h5>
         <img src="images/sgi.png">
@@ -438,7 +439,7 @@
         <img src="http://blog.e-shot.net/blog/wp-content/uploads/2015/08/Twitter-round-color.png">
         <img src="http://blog.e-shot.net/blog/wp-content/uploads/2015/08/Twitter-round-color.png">
       </div>
-    </div>
+    </div></div></div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- one for dev and one for deploy; only one at a time FIXME remove in production -->

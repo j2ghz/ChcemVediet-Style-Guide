@@ -54,7 +54,7 @@
     min-height: 1px;
     position: relative;
     width: percentage((.9 / 4));
-    
+
     //display: block;
     //margin-left: auto;
     //margin-right: auto;
@@ -70,7 +70,7 @@
   img {
     width: 50%;
   }
-  
+
   //mobile
   #chv-steps-carousel {
     margin-bottom: 50px;
@@ -115,7 +115,7 @@
 .chv-stats {
   background: $black8;
   padding: 25px 0;
-  > div {
+  >div.container >div.row> div {
     display: flex;
     align-items: center;
   }
@@ -230,7 +230,7 @@
       background-color: transparent;
     }
   }
-  
+
   //img {width: 20%;}
   .chv-footer-links {
     background: $black3;
