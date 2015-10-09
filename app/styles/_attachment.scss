@@ -1,6 +1,7 @@
-.chv-attachment-upload {
+.chv-attachment {
   span {
     border-radius: 3px;
+    height: 28px;
     padding-left: 6px;
     margin: 0;
     &:after {
@@ -17,11 +18,16 @@
       -moz-osx-font-smoothing: grayscale;
     }
   }
-  input[type='checkbox']+label {
-    cursor: pointer;
-    @include chv-tag-icon("\e013",$gray-lighter,$gray-dark);
+}
+.chv-attachment-upload {
+  @extend .chv-attachment;
+  span {
+    @include chv-tag-icon("\e014",$gray-lighter,$gray-dark);
   }
-  input[type='checkbox']:checked+label {
-    @include chv-tag-icon("\e014",$brand-primary-light,$brand-primary);
+}
+.chv-attachment-download {
+  @extend .chv-attachment;
+  span {
+    @include chv-tag-icon("\e025",$gray-lighter,$gray-dark);
   }
 }
