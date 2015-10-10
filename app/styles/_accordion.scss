@@ -1,0 +1,23 @@
+.chv-accordion {
+  .panel {
+    + .panel {
+      margin: 0;
+    }
+    border: none;
+    &:nth-child(even) {
+      background: $green7;
+    }
+    &:nth-child(odd) {
+      background: $green8;
+    }
+    .panel-heading {
+      background: inherit;
+    }
+    .panel-collapse {
+      background: $green8;
+      .panel-body {
+        border: none;
+      }
+    }
+  }
+}
