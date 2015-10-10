@@ -1,108 +1,128 @@
 .chv-search {
-  input,
-  .input-group-addon {
-    border: 0;
-  }
-  input:focus,
-  input:active:focus {
-    border: 0;
-    box-shadow: inset 0 0 1px 1px $blue5;
-  }
-  input:focus::placeholder {
-    color: $white;
-  }
-  .input-group-addon .glyphicon {
-    color: $blue3;
-  }
-}
-.chv-search-inverse {
-  * {
-    border: 0;
-  }
-  input {
-    background-color: $blue2;
-    color: $white;
-    z-index: 0 !important;
-    box-shadow: none;
-    &::placeholder {
-      color: $black5;
-    }
-    &:focus::placeholder {
-      color: $blue2;
-    }
-    &:focus {
-      box-shadow: none;
-    }
-  }
-  .input-group-addon {
-    background-color: $blue2;
-    border-bottom-right-radius: 4px !important;
-    border-top-right-radius: 4px !important;
-    &:hover {
-      background-color: $blue1;
+  border: $black7;
+  input[type='text'].form-control {
+    border-right: none;
+    &:active,
+    &:focus,
+    &:active:focus {
+      border-top: $black4;
+      border-bottom: $black4;
+      border-left: $black4;
+      border-right: none;
+      &::placeholder {
+        color: $white;
+      }
     }
     .glyphicon {
-      color: $white;
+      color: $blue3;
     }
   }
-  .input-shadow {
-    display: none;
-    border-radius: 4px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    /* to make div in front clickable through */
-    box-shadow: inset 0 0 10px $blue1 !important;
+  .input-group-addon {
+    background: $black8;
+    border-top: $black7;
+    border-bottom: $black7;
+    border-right: $black7;
+    border-left: none;
+    &:active,
+    &:focus,
+    &:active:focus {
+      border-top: $black4;
+      border-bottom: $black4;
+      border-right: $black4;
+      border-left: none;
+    }
   }
-}
-input[type='text'].form-control {
-  border-color: $black7;
-  box-shadow: none;
-  &::placeholder {
-    color: inherit;
+  .chv-search-inverse {
+    * {
+      border: 0;
+    }
+    input[type='text'].form-control {
+      background-color: $blue2;
+      color: $white;
+      z-index: 0 !important;
+      box-shadow: none;
+      &::placeholder {
+        color: $black4;
+      }
+      &:active:focus,
+      &:focus,
+      &:active {
+        box-shadow: none;
+        color: $white;
+        &::placeholder {
+          color: $blue2;
+        }
+      }
+    }
+    .input-group-addon {
+      background-color: $blue2;
+      border-bottom-right-radius: 4px !important;
+      border-top-right-radius: 4px !important;
+      &:hover {
+        background-color: $blue1;
+      }
+      .glyphicon {
+        color: $white;
+      }
+    }
+    .input-shadow {
+      display: none;
+      border-radius: 4px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      /* to make div in front clickable through */
+      box-shadow: inset 0 0 10px $blue1 !important;
+    }
   }
-  &:active:focus,
-  &:focus,
-  &:active {
+  input[type='text'].form-control {
+    border-color: $black7;
     box-shadow: none;
-    border-color: $black4;
-    color: $black3;
     &::placeholder {
-      color: $white;
-    }
-  }
-  &:invalid {
-    color: $orange3;
-    background-color: $orange8;
-    border-color: $orange5;
-    &::placeholder {
-      color: $orange3;
+      color: inherit;
     }
     &:active:focus,
     &:focus,
     &:active {
+      box-shadow: none;
+      border-color: $black4;
+      color: $black3;
+      &::placeholder {
+        color: $white;
+      }
+    }
+    &:invalid {
       color: $orange3;
       background-color: $orange8;
       border-color: $orange5;
       &::placeholder {
-        color: $orange8;
+        color: $orange3;
+      }
+      &:active:focus,
+      &:focus,
+      &:active {
+        color: $orange3;
+        background-color: $orange8;
+        border-color: $orange5;
+        &::placeholder {
+          color: $orange8;
+        }
       }
     }
-  }
-  &:disabled{
-    border-color: $black7;
-    background-color: $white;
-    color: $black5;
-    &:active:focus,
-    &:focus,
-    &:active {
+    &:disabled {
+      border-color: $black7;
+      background-color: $white;
       color: $black5;
-      &::placeholder {
+      &:active:focus,
+      &:focus,
+      &:active {
         color: $black5;
+        &::placeholder {
+          color: $black5;
+        }
       }
     }
   }
-}
