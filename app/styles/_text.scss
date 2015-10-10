@@ -58,3 +58,51 @@
     box-shadow: inset 0 0 10px $blue1 !important;
   }
 }
+input[type='text'].form-control {
+  border-color: $black7;
+  box-shadow: none;
+  &::placeholder {
+    color: inherit;
+  }
+  &:active:focus,
+  &:focus,
+  &:active {
+    box-shadow: none;
+    border-color: $black4;
+    color: $black3;
+    &::placeholder {
+      color: $white;
+    }
+  }
+  &:invalid {
+    color: $orange3;
+    background-color: $orange8;
+    border-color: $orange5;
+    &::placeholder {
+      color: $orange3;
+    }
+    &:active:focus,
+    &:focus,
+    &:active {
+      color: $orange3;
+      background-color: $orange8;
+      border-color: $orange5;
+      &::placeholder {
+        color: $orange8;
+      }
+    }
+  }
+  &:disabled{
+    border-color: $black7;
+    background-color: $white;
+    color: $black5;
+    &:active:focus,
+    &:focus,
+    &:active {
+      color: $black5;
+      &::placeholder {
+        color: $black5;
+      }
+    }
+  }
+}
