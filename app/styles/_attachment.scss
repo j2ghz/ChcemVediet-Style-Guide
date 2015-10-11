@@ -6,7 +6,7 @@
     padding: 3px 6px;
   }
   .chv-attachment-icon {
-    padding: 2.6px 6px;
+    padding: 4px 6px;
     font-family: 'Glyphicons Halflings';
     font-style: normal;
     font-weight: normal;
@@ -14,6 +14,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
+    display: inline-block;
     top: 2px;
   }
 }
