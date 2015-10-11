@@ -1,33 +1,61 @@
 .chv-attachment {
-  span {
-    border-radius: 3px;
-    height: 28px;
-    padding-left: 6px;
-    margin: 0;
-    &:after {
-      border-radius: 0 3px 3px 0;
-      vertical-align: middle;
-      padding: 3px;
-      margin-left: 3px;
-      position: relative;
-      display: inline-block;
-      font-family: 'Glyphicons Halflings';
-      font-style: normal;
-      font-weight: normal;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
+  color: $white;
+  margin: 5px;
+  display: inline-block;
+  .chv-attachment-filename {
+    padding: 3px 6px;
+  }
+  .chv-attachment-icon {
+    padding: 4px 6px;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    display: inline-block;
+    top: 2px;
   }
 }
 .chv-attachment-upload {
   @extend .chv-attachment;
-  span {
-    @include chv-tag-icon("\e014",$gray-lighter,$gray-dark);
+  .chv-attachment-filename {
+    background: $blue5;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  .chv-attachment-icon {
+    background: $blue5;
+    color: $blue4;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    &:before {
+      content: "\e014";
+    }
+    &:hover {
+      background: $blue4;
+      color: $blue5;
+    }
   }
 }
 .chv-attachment-download {
   @extend .chv-attachment;
-  span {
-    @include chv-tag-icon("\e025",$gray-lighter,$gray-dark);
+  .chv-attachment-filename {
+    background: $blue6;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .chv-attachment-icon {
+    background: $blue6;
+    color: $blue5;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    &:before {
+      content: "\e025";
+    }
+  }
+  &:hover span {
+    background: $blue4;
   }
 }
