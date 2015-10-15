@@ -82,7 +82,7 @@
       &:after {
         content: '';
         position: absolute;
-        left: 50%;
+        left: 50%; //FIXME isn't centered
         bottom: 0;
         width: 0;
         height: 0;

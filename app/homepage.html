@@ -32,16 +32,16 @@
             chcem<b>vediet</b>.sk <span class="badge">beta</span>
           </a>
 
-          <a href="#" class="navbar-brand pull-right hidden-md hidden-lg">EN</a>
-          <span id="search" class="glyphicon glyphicon-search navbar-brand pull-right hidden-md hidden-lg"></span>
+          <a href="#" class="navbar-brand pull-right visible-xs">EN</a>
+          <span id="search" class="glyphicon glyphicon-search navbar-brand pull-right visible-xs"></span>
         </div>
 
-        <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+        <ul class="nav navbar-nav navbar-right hidden-xs">
           <li>
             <a href="#">English</a>
           </li>
         </ul>
-        <form class="navbar-form navbar-right hidden-sm hidden-xs" role="search">
+        <form class="navbar-form navbar-right hidden-xs" role="search">
           <div class="input-group chv-search-inverse">
             <input type="text" class="form-control" placeholder="Hľadaj...">
             <div class="input-group-addon">
@@ -59,7 +59,7 @@
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <ul class="nav navbar-nav navbar-right">
-          <li class="navbar-toggle collapsed hidden-lg hidden-md" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+          <li class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
             <span>
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -74,7 +74,7 @@
             </div>
           </li>
 
-          <li class="dropdown hidden-lg hidden-md hidden-sm">
+          <li class="dropdown visible-xs">
             <a href="#" class="dropdown-toggle" data-toggle="collapse" data-target="#chv-logged-menu" role="button" aria-haspopup="true" aria-expanded="false">michala@lipkova.com <span class="caret"></span></a>
           </li>
 		  <li class="dropdown hidden-xs">
@@ -100,6 +100,7 @@
           </ul>
         </div>
         <div id="chv-logged-menu" class="hidden-lg hidden-md hidden-sm collapse">
+          <!-- HACK Can't use visible-xs, because then collapsing doesn't work -->
           <ul class="nav">
             <li><a href="#">Profil</a></li>
             <li><a href="#">Heslo</a></li>
@@ -118,7 +119,7 @@
     <div class="chv-main-panel">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-sm-offset-3 jumbotron text-center">
+          <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 jumbotron text-center">
             <h1>
               Čo chceš
               <span>vedieť?</span>
@@ -136,7 +137,7 @@
             <p class="lead">...alebo podaj infožiadosť cez tento portál.</p>
             <p class="lead">Je to jednoduché:</p>
           </div>
-          <div class="col-sm-12 row text-center chv-steps hidden-xs hidden-sm">
+          <div class="col-sm-12 row text-center chv-steps hidden-xs">
             <div>
               <img src="images/step01.svg">
               <p class="lead">Zaregistruj sa</p>
@@ -157,7 +158,7 @@
               <p class="lead">Čakaj pripomienku</p>
             </div>
           </div>
-          <div class="col-sm-12 row text-center chv-steps hidden-md hidden-lg" href="#chv-steps-carousel" data-slide="next">
+          <div class="col-sm-12 row text-center chv-steps visible-xs" href="#chv-steps-carousel" data-slide="next">
             <div id="chv-steps-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
 
               <!-- Wrapper for slides -->
@@ -463,20 +464,21 @@
     <div class="chv-footer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8 chv-sponsor">
+          <div class="col-md-8 chv-sponsor">
             <h5>Partneri projektu</h5>
             <img src="images/sgi.png">
             <img src="images/pontis.png">
             <img src="images/restart.png">
           </div>
-          <div class="col-sm-4">
-            <h5>Individuálny darcovia</h5>
-            <button class="btn btn-primary chv-zoznam">Zobraziť zoznam</button>
+          <div class="col-md-4">
+            <h5 class="hidden-xs">Individuálny darcovia</h5>
+            <button class="btn btn-primary chv-zoznam hidden-xs">Zobraziť zoznam</button>
             <a class="btn btn-primary">Chcem prispieť</a>
           </div>
           <div class="col-sm-12 chv-footer-links">
             <small>
-              chcemvediet.sk © 2013 | <a href="#">Právne podmienky</a> | <a href="#">Kontakt</a>
+              chcemvediet.sk © 2013
+              <span class="hidden-xs"> | <a href="#">Právne podmienky</a> | <a href="#">Kontakt</a></span>
             </small>
             <img src="http://blog.e-shot.net/blog/wp-content/uploads/2015/08/Twitter-round-color.png">
             <img src="http://blog.e-shot.net/blog/wp-content/uploads/2015/08/Twitter-round-color.png">
