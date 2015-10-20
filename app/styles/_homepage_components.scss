@@ -54,7 +54,7 @@
     min-height: 1px;
     position: relative;
     width: percentage((.9 / 4));
-
+    
     //display: block;
     //margin-left: auto;
     //margin-right: auto;
@@ -70,7 +70,7 @@
   img {
     width: 50%;
   }
-
+  
   //mobile
   #chv-steps-carousel {
     margin-bottom: 50px;
@@ -140,6 +140,8 @@
     background: #3766cb;
     border-radius: 50%;
     padding: 16px;
+    min-width: 56px;
+    min-height: 56px;
     .glyphicon {
       color: $black8;
     }
@@ -232,7 +234,7 @@
       background-color: transparent;
     }
   }
-
+  
   //img {width: 20%;}
   .chv-footer-links {
     background: $black3;
