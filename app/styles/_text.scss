@@ -5,10 +5,11 @@
     &:active,
     &:focus,
     &:active:focus {
-      border-top: $black4;
-      border-bottom: $black4;
-      border-left: $black4;
-      border-right: none;
+      border-width: 1px;
+      &,
+      & + .input-group-addon {
+        border-color: $black4;
+      }
       &::placeholder {
         color: $white;
       }
@@ -19,17 +20,10 @@
   }
   .input-group-addon {
     background: $black8;
-    border-top: $black7;
-    border-bottom: $black7;
-    border-right: $black7;
+    border: 1px solid $black7;
     border-left: none;
-    &:active,
-    &:focus,
-    &:active:focus {
-      border-top: $black4;
-      border-bottom: $black4;
-      border-right: $black4;
-      border-left: none;
+    &:hover {
+      background: $black3;
     }
   }
 }
