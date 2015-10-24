@@ -47,7 +47,7 @@ $orange8: #fef5f3;
       height: 64px;
       width: 64px;
       circle {
-        cx: 50%;
+        cx: 50%; //#35 FIX: pravdepodobne je problem s precentami, firefox v inspectore ukaze tento rule ako prazdny
         cy: 50%;
         r: 30;
       }
