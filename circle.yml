@@ -1,0 +1,14 @@
+dependencies:
+  override:
+    - npm install --dev
+  cache_directories:
+    - "node_modules"
+deployment:
+  production:
+    branch: master
+    commands:
+      - ./deploy.sh
+general:
+  branches:
+    ignore:
+      - gh-pages
